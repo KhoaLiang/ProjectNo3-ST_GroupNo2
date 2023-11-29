@@ -150,7 +150,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -167,10 +167,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
 
@@ -196,7 +196,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -221,7 +221,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -234,7 +234,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -259,7 +259,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -293,7 +293,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Hệ thống báo lỗi do trường "Course ID number" bị trùng, bỏ qua các trường nâng cao khác`, async function ()
             {
-                  courseId = "ST-01-C-UCT";
+                  courseId = "ST-01-UCT";
                   courseFullName = "Software Testing C-UCT";
 
                   // Tạo khóa học đầu tiên
@@ -301,10 +301,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -317,10 +317,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-02-C-UCT");
+                  await shortname.sendKeys("ST-02-UCT");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -452,17 +452,17 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-C-ECP";
+                  courseId = "ST-01-ECP";
                   courseFullName = "Software Testing C-ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -481,7 +481,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -498,7 +498,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -545,7 +545,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -558,7 +558,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -583,7 +583,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -617,7 +617,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Người dùng để trường "Course ID number" bị trùng`, async function ()
             {
-                  courseId = "ST-01-C-ECP";
+                  courseId = "ST-01-ECP";
                   courseFullName = "Software Testing C-ECP";
 
                   // Tạo khóa học đầu tiên
@@ -625,10 +625,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -641,10 +641,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-ECP");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-02-C-ECP");
+                  await shortname.sendKeys("ST-02-ECP");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -776,17 +776,17 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-C-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing C-DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -805,7 +805,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -822,7 +822,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -844,10 +844,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -894,7 +894,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -919,7 +919,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -932,7 +932,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -949,7 +949,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-C-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing C-DT";
 
                   // Tạo khóa học đầu tiên
@@ -957,10 +957,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -973,10 +973,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-02-C-DT");
+                  await idnumber.sendKeys("ST-02-DT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -1001,7 +1001,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -1043,10 +1043,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -1080,7 +1080,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Người dùng nhập "Course ID number" bị trùng`, async function ()
             {
-                  courseId = "ST-01-C-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing C-DT";
 
                   // Tạo khóa học đầu tiên
@@ -1088,10 +1088,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-C-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1104,10 +1104,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing C-DT");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-02-C-DT");
+                  await shortname.sendKeys("ST-02-DT");
 
                   idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("ST-01-C-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1239,23 +1239,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Nhập trường "Course full name" sao cho có độ dài bằng 128 ký tự, "Course short name" và "Course ID number" sao cho có độ dài 50 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1272,14 +1272,14 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
@@ -1297,23 +1297,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "C";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "S";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("C");
+                  await fullname.sendKeys("S");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("C", fullNameText);
+                  assert.equal("S", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1325,23 +1325,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CS";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "ST";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CS");
+                  await fullname.sendKeys("ST");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CS", fullNameText);
+                  assert.equal("ST", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1353,23 +1353,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 253 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI");
+                  await fullname.sendKeys("BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI", fullNameText);
+                  assert.equal("BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1381,23 +1381,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 254 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx");
+                  await fullname.sendKeys("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
+                  assert.equal("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1409,23 +1409,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 255 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILxS");
+                  await fullname.sendKeys("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILxS");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
+                  assert.equal("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1442,14 +1442,14 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1466,23 +1466,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("C");
+                  await shortname.sendKeys("S");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("C", shortNameText);
+                  assert.equal("S", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1494,23 +1494,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CS");
+                  await shortname.sendKeys("ST");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CS", shortNameText);
+                  assert.equal("ST", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1522,23 +1522,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 99 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1550,23 +1550,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 100 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1578,23 +1578,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 101 ký tự`, async function ()
             {
-                  courseId = "CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa1");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa1");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1607,17 +1607,17 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Để trống trường "Course ID number"`, async function ()
             {
                   courseId = "";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1629,23 +1629,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "C";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "S";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("C");
+                  await idnumber.sendKeys("S");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("C", idNumberText);
+                  assert.equal("S", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1657,23 +1657,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "CS";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "ST";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CS");
+                  await idnumber.sendKeys("ST");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CS", idNumberText);
+                  assert.equal("ST", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1685,23 +1685,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 99 ký tự`, async function ()
             {
-                  courseId = "CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1713,23 +1713,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 100 ký tự`, async function ()
             {
-                  courseId = "CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1741,23 +1741,23 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 101 ký tự`, async function ()
             {
-                  courseId = "CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
-                  courseFullName = "CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("CBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("CBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW1");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW1");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("CBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -1920,7 +1920,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -1937,10 +1937,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
 
@@ -1966,7 +1966,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -1991,7 +1991,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2004,7 +2004,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2029,7 +2029,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -2063,7 +2063,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Hệ thống báo lỗi do trường "Course ID number" bị trùng, bỏ qua các trường nâng cao khác`, async function ()
             {
-                  courseId = "ST-01-E-UCT";
+                  courseId = "ST-01-UCT";
                   courseFullName = "Software Testing E-UCT";
 
                   // Tạo khóa học đầu tiên
@@ -2071,10 +2071,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-UCT");
+                  await shortname.sendKeys("ST-01-UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2087,10 +2087,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-02-E-UCT");
+                  await shortname.sendKeys("ST-02-UCT");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-UCT");
+                  await idnumber.sendKeys("ST-01-UCT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2222,17 +2222,17 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-E-ECP";
+                  courseId = "ST-01-ECP";
                   courseFullName = "Software Testing E-ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2251,7 +2251,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2268,7 +2268,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2315,7 +2315,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -2328,7 +2328,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -2353,7 +2353,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -2387,7 +2387,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Người dùng để trường "Course ID number" bị trùng`, async function ()
             {
-                  courseId = "ST-01-E-ECP";
+                  courseId = "ST-01-ECP";
                   courseFullName = "Software Testing E-ECP";
 
                   // Tạo khóa học đầu tiên
@@ -2395,10 +2395,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-ECP");
+                  await shortname.sendKeys("ST-01-ECP");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2411,10 +2411,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-ECP");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-02-E-ECP");
+                  await shortname.sendKeys("ST-02-ECP");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-ECP");
+                  await idnumber.sendKeys("ST-01-ECP");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2546,17 +2546,17 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-E-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing E-DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2575,7 +2575,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2592,7 +2592,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2614,10 +2614,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2664,7 +2664,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2689,7 +2689,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2702,7 +2702,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2719,7 +2719,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" không bị trùng`, async function ()
             {
-                  courseId = "ST-01-E-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing E-DT";
 
                   // Tạo khóa học đầu tiên
@@ -2727,10 +2727,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2743,10 +2743,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-02-E-DT");
+                  await idnumber.sendKeys("ST-02-DT");
 
                   submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2771,7 +2771,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -2813,10 +2813,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let helper = await pageElem.findElement(By.id('id_category_label'));
                   helper = await helper.findElement(By.xpath('..'));
@@ -2850,7 +2850,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Người dùng nhập "Course ID number" bị trùng`, async function ()
             {
-                  courseId = "ST-01-E-DT";
+                  courseId = "ST-01-DT";
                   courseFullName = "Software Testing E-DT";
 
                   // Tạo khóa học đầu tiên
@@ -2858,10 +2858,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-01-E-DT");
+                  await shortname.sendKeys("ST-01-DT");
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -2874,10 +2874,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   await fullname.sendKeys("Software Testing E-DT");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ST-02-E-DT");
+                  await shortname.sendKeys("ST-02-DT");
 
                   idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("ST-01-E-DT");
+                  await idnumber.sendKeys("ST-01-DT");
 
                   submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3009,23 +3009,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Nhập trường "Course full name" sao cho có độ dài bằng 128 ký tự, "Course short name" và "Course ID number" sao cho có độ dài 50 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3042,14 +3042,14 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
@@ -3067,23 +3067,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "E";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "S";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("E");
+                  await fullname.sendKeys("S");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("E", fullNameText);
+                  assert.equal("S", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3095,23 +3095,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "ES";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "ST";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("ES");
+                  await fullname.sendKeys("ST");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("ES", fullNameText);
+                  assert.equal("ST", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3123,23 +3123,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 253 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI");
+                  await fullname.sendKeys("BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAhoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI", fullNameText);
+                  assert.equal("BVA0hoMIzHkY46UY8VutFSkIbqMwnZE3XPMlArYFNL7H6kyaIAehv3DzEnY22ESPPzdAU34XZ30ohUeIHkNsDsgXUy8CPkJALfOy5UX6kNK6h8rZ5bIdXiddlCEyjyETtdRQM5mQTQVIg4NYg4uvSETTS3dH3y6sciQh988IixlNmddCX9YAs0xqYJzFYhcTj7qz995e64OTKMGG4WcGKVS9vSANIptVBZ8CcRII8RnsEltsZhIuzdndIPcOI", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3151,23 +3151,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 254 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx");
+                  await fullname.sendKeys("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
+                  assert.equal("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3179,23 +3179,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course full name" có độ dài 255 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILxS");
+                  await fullname.sendKeys("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILxS");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAlhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
+                  assert.equal("BVA0lhEygPjM1E0CxqFVCeIdgszdzdHKnMtwDY6JvbPeqKjnJiNoKRPQeH21IdMGWfmY6zCnx5DP80BYNqZclB3r3ZYu2qOQXU31EjS052LM5Ox7jrGcEIcIP10ctdL08zbaGWdIarG5dikMHrsGZV143NuTgtjfarGvBRVFV3yHYP18H5dZjBnqCUjWbtHXYDF0xdmNPtJ5o0G4iXiqvBlBlUrvkpY2fvzS62arAvBLjEN90yGRsnyN5QLILx", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3212,14 +3212,14 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3236,23 +3236,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("E");
+                  await shortname.sendKeys("S");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("E", shortNameText);
+                  assert.equal("S", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3264,23 +3264,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("ES");
+                  await shortname.sendKeys("ST");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("ES", shortNameText);
+                  assert.equal("ST", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3292,23 +3292,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 99 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTA", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3320,23 +3320,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 100 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3348,23 +3348,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course short name" có độ dài 101 ký tự`, async function ()
             {
-                  courseId = "EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa1");
+                  await shortname.sendKeys("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa1");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAp7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
+                  assert.equal("BVA0p7yQNjoImALdAtlTdvBp8kTgZqjKHLxreTVUEsY7csc1wye9yUZ7sGQ38ZfxxpVwkmuZE6Zrk8hS7vVNQRaFozOFpv6wKTAa", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
+                  await idnumber.sendKeys("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAJeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
+                  assert.equal("BVA0JeA6Bj4AJWlVTlhw6vYgoLjvzTu3kA0Uj9lnxmYExXIJtt", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3377,17 +3377,17 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Để trống trường "Course ID number"`, async function ()
             {
                   courseId = "";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3399,23 +3399,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 1 ký tự`, async function ()
             {
-                  courseId = "E";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "S";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("E");
+                  await idnumber.sendKeys("S");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("E", idNumberText);
+                  assert.equal("S", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3427,23 +3427,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 2 ký tự`, async function ()
             {
-                  courseId = "ES";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "ST";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("ES");
+                  await idnumber.sendKeys("ST");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("ES", idNumberText);
+                  assert.equal("ST", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3455,23 +3455,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 99 ký tự`, async function ()
             {
-                  courseId = "EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISs", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3483,23 +3483,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 100 ký tự`, async function ()
             {
-                  courseId = "EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
@@ -3511,23 +3511,23 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
             it(`Trường "Course ID number" có độ dài 101 ký tự`, async function ()
             {
-                  courseId = "EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
-                  courseFullName = "EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
+                  courseId = "BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW";
+                  courseFullName = "BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j";
 
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
+                  await fullname.sendKeys("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j");
                   let fullNameText = await fullname.getAttribute('value');
-                  assert.equal("EBVAShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
+                  assert.equal("BVA0ShwaiP3lG3gF82ZB6OuYl0CyUK4TzcBSz5BS65P2TSb53cr9wHAfYfl7n8wCUZdOusbLzl79wbBLxfscsjzScbUHevJMoVn1UjsbNoDfbW1ZM6GeKx1HvH9UlS2j", fullNameText);
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
-                  await shortname.sendKeys("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
+                  await shortname.sendKeys("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X");
                   let shortNameText = await shortname.getAttribute('value');
-                  assert.equal("EBVAsmLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
+                  assert.equal("BVA0smLtpMPBFHxgFT1Yi6vqunCqheNcp9e4QiT8nKog0Y8J4X", shortNameText);
 
                   let idnumber = await pageElem.findElement(By.id('id_idnumber'));
-                  await idnumber.sendKeys("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW1");
+                  await idnumber.sendKeys("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW1");
                   let idNumberText = await idnumber.getAttribute('value');
-                  assert.equal("EBVAakSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
+                  assert.equal("BVA0akSSdKYRhfa3amTag0H2cX0WQHbPJLO3te6tIyVHJq0FkB3h5g0zfSNyxPAvuDPs60rlnKegojiRWrxOhOhzvLi6VGLnISsW", idNumberText);
 
                   let submit = await pageElem.findElement(By.id('id_saveanddisplay'));
                   await submit.click();
