@@ -10,10 +10,8 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
       beforeAll(async function ()
       {
             driver = await new Builder().forBrowser("chrome").build();
-      });
 
-      it("Trước tiên người dùng cần phải đăng nhập", async function ()
-      {
+            // Trước tiên người dùng cần phải đăng nhập
             await driver.get("https://sandbox.moodledemo.net/login/index.php");
 
             let pageElem = await driver.wait(until.elementLocated(By.id('page')), 10000);
@@ -144,10 +142,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Hệ thống tạo khóa học mới thành công với trường "Course ID number" để trống, bỏ qua các trường nâng cao`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -193,7 +191,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-UCT");
@@ -214,11 +212,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Hệ thống báo lỗi do trường "Course short name" bị trùng, trường "Course ID number" trống, bỏ qua các trường nâng cao khác`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -231,7 +229,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -246,7 +244,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing C-UCT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing UCT)");
             });
 
             it(`Hệ thống báo lỗi do thiếu trường "Course category", trường "Course ID number" trống, bỏ qua các trường nâng cao khác`, async function ()
@@ -256,17 +254,15 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -294,11 +290,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Hệ thống báo lỗi do trường "Course ID number" bị trùng, bỏ qua các trường nâng cao khác`, async function ()
             {
                   courseId = "ST-01-UCT";
-                  courseFullName = "Software Testing C-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -314,7 +310,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-02-UCT");
@@ -332,7 +328,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing C-UCT)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing UCT)");
             });
       });
 
@@ -453,10 +449,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-ECP";
-                  courseFullName = "Software Testing C-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -475,10 +471,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -520,7 +516,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -538,11 +534,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course short name" bị trùng`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-ECP");
@@ -555,7 +551,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-ECP");
@@ -570,7 +566,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing C-ECP)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing ECP)");
             });
 
             it(`Người dùng để trường "Course category" trống`, async function ()
@@ -580,17 +576,15 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -618,11 +612,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course ID number" bị trùng`, async function ()
             {
                   courseId = "ST-01-ECP";
-                  courseFullName = "Software Testing C-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -638,7 +632,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-02-ECP");
@@ -656,7 +650,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing C-ECP)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing ECP)");
             });
       });
 
@@ -777,10 +771,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing C-DT";
+                  courseFullName = "Software Testing DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -799,10 +793,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-DT";
+                  courseFullName = "Software Testing DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -869,7 +863,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -891,7 +885,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-DT");
@@ -912,11 +906,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing C-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -929,7 +923,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -944,17 +938,17 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing C-DT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing DT)");
             });
 
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing C-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -970,7 +964,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -988,7 +982,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing C-DT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing DT)");
             });
 
             it(`Người dùng để trường "Course category" trống và "Course ID number" trống`, async function ()
@@ -998,17 +992,15 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -1040,7 +1032,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -1048,12 +1040,10 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-DT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -1081,11 +1071,11 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             it(`Người dùng nhập "Course ID number" bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing C-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-DT");
@@ -1101,7 +1091,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing C-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-02-DT");
@@ -1119,7 +1109,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing C-DT)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing DT)");
             });
       });
 
@@ -1768,7 +1758,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             })
       });
 
-      // afterAll(async () => await driver.quit());
+      afterAll(async () => await driver.quit());
 });
 
 describe("Test trên edge (tổng 43 testcases)", function ()
@@ -1780,10 +1770,8 @@ describe("Test trên edge (tổng 43 testcases)", function ()
       beforeAll(async function ()
       {
             driver = await new Builder().forBrowser("MicrosoftEdge").build();
-      });
 
-      it("Trước tiên người dùng cần phải đăng nhập", async function ()
-      {
+            // Trước tiên người dùng cần phải đăng nhập
             await driver.get("https://sandbox.moodledemo.net/login/index.php");
 
             let pageElem = await driver.wait(until.elementLocated(By.id('page')), 10000);
@@ -1914,10 +1902,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Hệ thống tạo khóa học mới thành công với trường "Course ID number" để trống, bỏ qua các trường nâng cao`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -1963,7 +1951,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-UCT");
@@ -1984,11 +1972,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Hệ thống báo lỗi do trường "Course short name" bị trùng, trường "Course ID number" trống, bỏ qua các trường nâng cao khác`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -2001,7 +1989,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -2016,7 +2004,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing E-UCT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing UCT)");
             });
 
             it(`Hệ thống báo lỗi do thiếu trường "Course category", trường "Course ID number" trống, bỏ qua các trường nâng cao khác`, async function ()
@@ -2026,17 +2014,15 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -2064,11 +2050,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Hệ thống báo lỗi do trường "Course ID number" bị trùng, bỏ qua các trường nâng cao khác`, async function ()
             {
                   courseId = "ST-01-UCT";
-                  courseFullName = "Software Testing E-UCT";
+                  courseFullName = "Software Testing UCT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-UCT");
@@ -2084,7 +2070,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-UCT");
+                  await fullname.sendKeys("Software Testing UCT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-02-UCT");
@@ -2102,7 +2088,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing E-UCT)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing UCT)");
             });
       });
 
@@ -2223,10 +2209,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-ECP";
-                  courseFullName = "Software Testing E-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -2245,10 +2231,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -2290,7 +2276,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2308,11 +2294,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course short name" bị trùng`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-ECP");
@@ -2325,7 +2311,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-ECP");
@@ -2340,7 +2326,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing E-ECP)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing ECP)");
             });
 
             it(`Người dùng để trường "Course category" trống`, async function ()
@@ -2350,17 +2336,15 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -2388,11 +2372,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course ID number" bị trùng`, async function ()
             {
                   courseId = "ST-01-ECP";
-                  courseFullName = "Software Testing E-ECP";
+                  courseFullName = "Software Testing ECP";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-ECP");
@@ -2408,7 +2392,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-ECP");
+                  await fullname.sendKeys("Software Testing ECP");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-02-ECP");
@@ -2426,7 +2410,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing E-ECP)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing ECP)");
             });
       });
 
@@ -2547,10 +2531,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing E-DT";
+                  courseFullName = "Software Testing DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2569,10 +2553,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng tạo khóa học thành công với trường "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-DT";
+                  courseFullName = "Software Testing DT";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2639,7 +2623,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let submit = await pageElem.findElement(By.id("id_saveanddisplay"));
                   await submit.click();
@@ -2661,7 +2645,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-DT");
@@ -2682,11 +2666,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" trống`, async function ()
             {
                   courseId = "";
-                  courseFullName = "Software Testing E-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2699,7 +2683,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2714,17 +2698,17 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing E-DT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing DT)");
             });
 
             it(`Người dùng để trường "Course short name" bị trùng và "Course ID number" không bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing E-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2740,7 +2724,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course short name)
                   fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2758,7 +2742,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await shortNameError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "Short name is already used for another course (Software Testing E-DT)");
+                  assert.equal(text, "Short name is already used for another course (Software Testing DT)");
             });
 
             it(`Người dùng để trường "Course category" trống và "Course ID number" trống`, async function ()
@@ -2768,17 +2752,15 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -2810,7 +2792,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   courseFullName = "";
 
                   let fullname = await pageElem.findElement(By.id("id_fullname"));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id("id_shortname"));
                   await shortname.sendKeys("ST-01-DT");
@@ -2818,12 +2800,10 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   let idnumber = await pageElem.findElement(By.id("id_idnumber"));
                   await idnumber.sendKeys("ST-01-DT");
 
-                  let helper = await pageElem.findElement(By.id('id_category_label'));
-                  helper = await helper.findElement(By.xpath('..'));
-                  helper = await helper.findElement(By.xpath('..'));
+                  let categoryElem = await driver.wait(until.elementLocated(By.id('fitem_id_category')), 10000);
+                  let helper = await categoryElem.findElement(By.xpath(`//input[@placeholder='Search' and @data-fieldtype='autocomplete']`));
 
-                  let ul = await helper.findElement(By.xpath(`//ul[@class='form-autocomplete-suggestions']`));
-                  let ulId = await ul.getAttribute('id');
+                  let ulId = await helper.getAttribute('list');
                   let arrowId = ulId.replace('suggestions', 'downarrow');
                   let arrow = await pageElem.findElement(By.id(arrowId));
                   await arrow.click();
@@ -2851,11 +2831,11 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             it(`Người dùng nhập "Course ID number" bị trùng`, async function ()
             {
                   courseId = "ST-01-DT";
-                  courseFullName = "Software Testing E-DT";
+                  courseFullName = "Software Testing DT";
 
                   // Tạo khóa học đầu tiên
                   let fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   let shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-01-DT");
@@ -2871,7 +2851,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
                   // Tạo khóa học thứ hai (bị trùng Course ID Number)
                   fullname = await pageElem.findElement(By.id('id_fullname'));
-                  await fullname.sendKeys("Software Testing E-DT");
+                  await fullname.sendKeys("Software Testing DT");
 
                   shortname = await pageElem.findElement(By.id('id_shortname'));
                   await shortname.sendKeys("ST-02-DT");
@@ -2889,7 +2869,7 @@ describe("Test trên edge (tổng 43 testcases)", function ()
                   const text = await idNumberError.getText();
 
                   assert.equal(displayStyle, "block");
-                  assert.equal(text, "ID number is already used for another course (Software Testing E-DT)");
+                  assert.equal(text, "ID number is already used for another course (Software Testing DT)");
             });
       });
 
@@ -3538,5 +3518,5 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             })
       });
 
-      // afterAll(async () => await driver.quit());
+      afterAll(async () => await driver.quit());
 });
