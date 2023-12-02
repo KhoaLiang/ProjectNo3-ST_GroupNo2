@@ -1,6 +1,7 @@
 const { By, Builder, until } = require("selenium-webdriver");
 const { Select } = require('selenium-webdriver/lib/select');
 const assert = require("assert");
+const fs = require("fs");
 
 describe(`Test trên chrome (tổng 21 testcases)`, () =>
 {
@@ -8,9 +9,41 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
 
       const valid1 = `${ __dirname }/files/ValidFile1.txt`;
       const valid2 = `${ __dirname }/files/ValidFile2.txt`;
-      const valid3 = `${ __dirname }/files/ValidFile3.txt`;
+      // const valid3 = `${ __dirname }/files/ValidFile3.txt`;
       const bigFile = `${ __dirname }/files/BigFile.pdf`;
       const emptyFile = `${ __dirname }/files/EmptyFile.txt`;
+
+      const dragAndDropSimulationScript = `function simulateFileDragAndDrop(element, files) {
+        // Create a DataTransfer object for simulating file drag and drop
+        const dataTransfer = new DataTransfer();
+
+        // Add the simulated files to the DataTransfer object
+        for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            dataTransfer.items.add(file);
+        }
+
+        // Create a custom event for the drop with the simulated DataTransfer object
+        const dropEvent = new DragEvent('drop', {
+            bubbles: true,
+            cancelable: true,
+            dataTransfer: dataTransfer,
+        });
+
+        // Dispatch the drop event on the element
+        element.dispatchEvent(dropEvent);
+    }
+
+    // Simulate dragging and dropping files onto the specified div element with ID 'myDropZone'
+    const dropZone = document.getElementsByClassName('filemanager-container card')[0];
+    
+    // Create simulated files (adjust as needed)
+    const file1 = new File(['File content 1'], 'file1.txt', { type: 'text/plain' });
+    const file2 = new File(['File content 2'], 'file2.txt', { type: 'text/plain' });
+    const file3 = new File(['File content 3'], 'file3.txt', { type: 'text/plain' });
+
+    // Simulate file drag and drop with the created files
+    simulateFileDragAndDrop(dropZone, [file1, file2, file3]);`;
 
       let reset = true;
 
@@ -32,10 +65,11 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await submit.click();
 
             // Vào trang "My first course"
-            await driver.get("https://sandbox.moodledemo.net/?lang=en&redirect=0");
+            await driver.get("https://sandbox.moodledemo.net/course/view.php?id=2&lang=en");
+            // await driver.get("https://sandbox.moodledemo.net/?lang=en&redirect=0");
 
-            let firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
-            await firstCourse.click();
+            // let firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
+            // await firstCourse.click();
 
             // Tạo assignment
             // try
@@ -101,8 +135,9 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await submit.click();
 
             // Vào trang nộp assignment
-            firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
-            await firstCourse.click();
+            await driver.get("https://sandbox.moodledemo.net/course/view.php?id=2&lang=en");
+            // firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
+            // await firstCourse.click();
 
             let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
             test = await test.findElement(By.xpath('..'));
@@ -147,8 +182,9 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await submit.click();
 
             // Vào trang "My first course"
-            let firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
-            await firstCourse.click();
+            await driver.get("https://sandbox.moodledemo.net/course/view.php?id=2&lang=en");
+            //       let firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
+            //       await firstCourse.click();
 
             // Xóa assignment
             // try
@@ -168,16 +204,16 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             let deleteButton = await driver.findElement(By.xpath(`//div[@class='activity-item focus-control ' and @data-activityname='TEST ASSIGNMENT - SUBMISSION TEST']/div[@class='activity-grid ']/div[@class='activity-actions bulk-hidden align-self-start']/div/div/div/div/div/a[@class='dropdown-item editing_delete text-danger menu-action cm-edit-action' and @data-action='cmDelete']`));
             await deleteButton.click();
 
-            // try
-            // {
-            // deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='button' and @data-action='delete']`)), 10000);
-            // await deleteButton.click();
-            // }
-            // catch (err)
-            // {
-            deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Yes')]`)), 10000);
-            await deleteButton.click();
-            // }
+            try
+            {
+                  deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Yes')]`)), 10000);
+                  await deleteButton.click();
+            }
+            catch (err)
+            {
+                  deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='button' and @data-action='delete']`)), 10000);
+                  await deleteButton.click();
+            }
 
             //await driver.quit();
       });
@@ -204,7 +240,7 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   }
                   else
                   {
-                        await driver.navigate().back();  
+                        await driver.navigate().back();
                         reset = true;
                   }
             });
@@ -231,7 +267,6 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await uploadButton.click();
 
-                  // addFile = await pageElem.findElement(By.xpath(`//a[@role='button' and @title='Add...']`));
                   await addFile.click();
 
                   try
@@ -253,7 +288,6 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
                   await finishButton.click();
 
-                  await driver.wait(until.elementLocated(By.id(`page`)));
                   let currentURL = await driver.getCurrentUrl();
                   assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
             });
@@ -310,7 +344,6 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
                   await finishButton.click();
 
-                  await driver.wait(until.elementLocated(By.id(`page`)));
                   let currentURL = await driver.getCurrentUrl();
                   assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
             });
@@ -397,24 +430,32 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await uploadButton.click();
 
-                  let errorModal = await driver.wait(until.elementLocated(By.id('fp-msg-labelledby')), 10000);
+                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//p[@id='fp-msg-labelledby']`)), 10000);
                   let errorText = await errorModal.getText();
 
                   assert.equal(errorText, "No files attached");
             });
 
-            // it(`Số lượng file quá nhiều`, async () =>
-            // {
-            // });
+            it(`Số lượng file quá nhiều`, async () =>
+            {
+                  reset = false;
+
+                  await driver.executeScript(dragAndDropSimulationScript);
+
+                  const error = await driver.wait(until.elementLocated(By.xpath(`//p[@id='fp-msg-labelledby']`)), 10000);
+                  const text = await error.getText();
+
+                  assert.match(text, /^You are allowed to attach a maximum of \d+ file\(s\) to this item$/);
+            });
       });
 
-      // describe(`Decision table technique (10 testcases)`, () =>
-      // {
+      describe(`Decision table technique (10 testcases)`, () =>
+      {
 
-      // });
+      });
 
-      // describe(`Use-case testing technique (5 testcases)`, () =>
-      // {
+      describe(`Use-case testing technique (5 testcases)`, () =>
+      {
 
-      // });
+      });
 });
