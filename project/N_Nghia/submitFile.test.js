@@ -12,6 +12,8 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
       const bigFile = `${ __dirname }/files/BigFile.pdf`;
       const emptyFile = `${ __dirname }/files/EmptyFile.txt`;
 
+      let reset = true;
+
       let driver;
 
       beforeAll(async function ()
@@ -19,7 +21,7 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             driver = await new Builder().forBrowser("chrome").build();
 
             // Trước tiên người dùng cần phải đăng nhập với tư cách là admin
-            await driver.get("https://sandbox.moodledemo.net/login/index.php");
+            await driver.get("https://sandbox.moodledemo.net/login/index.php?lang=en");
 
             let username = await driver.wait(until.elementLocated(By.name('username')), 10000);
             let password = await driver.wait(until.elementLocated(By.name('password')), 10000);
@@ -30,14 +32,22 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await submit.click();
 
             // Vào trang "My first course"
-            await driver.get("https://sandbox.moodledemo.net/?redirect=0");
+            await driver.get("https://sandbox.moodledemo.net/?lang=en&redirect=0");
 
             let firstCourse = await driver.wait(until.elementLocated(By.xpath(`//a[@class='aalink' and contains(text(),'My first course')]`)), 10000);
             await firstCourse.click();
 
             // Tạo assignment
+            // try
+            // {
             let setMode = await driver.wait(until.elementLocated(By.name('setmode')), 10000);
             await setMode.click();
+            // }
+            // catch (err)
+            // {
+            //       let editMode = await driver.wait(until.elementLocated(By.xpath(`//div[@class='singlebutton']/form/button[@type='submit' and @class='btn btn-secondary']`)), 10000);
+            //       await editMode.click();
+            // }
 
             let addActivity = await driver.wait(until.elementLocated(By.xpath(`//button[@class='btn btn-link text-decoration-none section-modchooser section-modchooser-link activity-add bulk-hidden d-flex align-items-center p-3 mb-5' and @data-action='open-chooser' and @data-sectionid='0']`)));
             await addActivity.click();
@@ -56,13 +66,29 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await createAssignment.click();
 
             // Thoát ra và đăng nhập với tư cách là student
-            let toggler = await driver.wait(until.elementLocated(By.id('user-menu-toggle')), 10000);
+            // try
+            // {
+            let toggler = await driver.wait(until.elementLocated(By.id(`user-menu-toggle`)), 10000);
             await toggler.click();
+            // }
+            // catch (err)
+            // {
+            //       let toggler = await driver.wait(until.elementLocated(By.css(`[id^='action-menu-toggle']`)), 10000);
+            //       await toggler.click();
+            // }
 
+            // try
+            // {
             let logout = await driver.wait(until.elementLocated(By.xpath(`//a[@class='dropdown-item' and @role='menuitem' and contains(text(),'Log out')]`)), 10000);
             await logout.click();
+            // }
+            // catch (err)
+            // {
+            //       let logout = await driver.wait(until.elementLocated(By.xpath(`//a[@class='dropdown-item menu-action' and @role='menuitem' and contains(text(),'Log out')]`)), 10000);
+            //       await logout.click();
+            // }
 
-            await driver.get("https://sandbox.moodledemo.net/login/index.php");
+            await driver.get("https://sandbox.moodledemo.net/login/index.php?lang=en");
 
             username = await driver.wait(until.elementLocated(By.name('username')), 10000);
             password = await driver.wait(until.elementLocated(By.name('password')), 10000);
@@ -86,15 +112,31 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
       afterAll(async () =>
       {
             // Thoát ra và đăng nhập với tư cách là admin
-            let toggler = await driver.wait(until.elementLocated(By.id('user-menu-toggle')), 10000);
+            // try
+            // {
+            let toggler = await driver.wait(until.elementLocated(By.id(`user-menu-toggle`)), 10000);
             await toggler.click();
+            // }
+            // catch (err)
+            // {
+            //       let toggler = await driver.wait(until.elementLocated(By.css(`[id^='action-menu-toggle']`)), 10000);
+            //       await toggler.click();
+            // }
 
+            // try
+            // {
             let logout = await driver.wait(until.elementLocated(By.xpath(`//a[@class='dropdown-item' and @role='menuitem' and contains(text(),'Log out')]`)), 10000);
             await logout.click();
+            // }
+            // catch (err)
+            // {
+            //       let logout = await driver.wait(until.elementLocated(By.xpath(`//a[@class='dropdown-item menu-action' and @role='menuitem']/span[contains(text(),'Log out')]`)), 10000);
+            //       await logout.click();
+            // }
 
-            await driver.get("https://sandbox.moodledemo.net/login/index.php");
+            await driver.get("https://sandbox.moodledemo.net/login/index.php?lang=en");
 
-            let username = await driver.wait(until.elementLocated(By.name('username')), 10000); 
+            let username = await driver.wait(until.elementLocated(By.name('username')), 10000);
             let password = await driver.wait(until.elementLocated(By.name('password')), 10000);
             let submit = await driver.wait(until.elementLocated(By.id('loginbtn')), 10000);
 
@@ -109,8 +151,16 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             await firstCourse.click();
 
             // Xóa assignment
+            // try
+            // {
             let setMode = await driver.wait(until.elementLocated(By.name('setmode')), 10000);
             await setMode.click();
+            // }
+            // catch (err)
+            // {
+            //       let editMode = await driver.wait(until.elementLocated(By.xpath(`//div[@class='singlebutton']/form/button[@type='submit' and @class='btn btn-secondary']`)), 10000);
+            //       await editMode.click();
+            // }
 
             let navigator = await driver.wait(until.elementLocated(By.xpath(`//div[@class='activity-item focus-control ' and @data-activityname='TEST ASSIGNMENT - SUBMISSION TEST']/div[@class='activity-grid ']/div[@class='activity-actions bulk-hidden align-self-start']`)), 10000);
             await navigator.click();
@@ -118,19 +168,16 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             let deleteButton = await driver.findElement(By.xpath(`//div[@class='activity-item focus-control ' and @data-activityname='TEST ASSIGNMENT - SUBMISSION TEST']/div[@class='activity-grid ']/div[@class='activity-actions bulk-hidden align-self-start']/div/div/div/div/div/a[@class='dropdown-item editing_delete text-danger menu-action cm-edit-action' and @data-action='cmDelete']`));
             await deleteButton.click();
 
-            try
-            {
-                  deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='button' and @data-action='delete']`)), 10000);
-                  await deleteButton.click();
-            }
-            catch (err)
-            {
-                  if (err.name === 'TimeoutError')
-                  {
-                        deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Yes')]`)), 10000);
-                        await deleteButton.click();
-                  }
-            }
+            // try
+            // {
+            // deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='button' and @data-action='delete']`)), 10000);
+            // await deleteButton.click();
+            // }
+            // catch (err)
+            // {
+            deleteButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Yes')]`)), 10000);
+            await deleteButton.click();
+            // }
 
             //await driver.quit();
       });
@@ -147,11 +194,19 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
 
             afterEach(async () =>
             {
-                  let removeSubmission = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Remove submission')]`)), 10000);
-                  await removeSubmission.click();
+                  if (reset)
+                  {
+                        let removeSubmission = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Remove submission')]`)), 10000);
+                        await removeSubmission.click();
 
-                  let continueButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Continue')]`)), 10000);
-                  await continueButton.click();
+                        let continueButton = await driver.wait(until.elementLocated(By.xpath(`//button[@type='submit' and contains(text(),'Continue')]`)), 10000);
+                        await continueButton.click();
+                  }
+                  else
+                  {
+                        await driver.navigate().back();  
+                        reset = true;
+                  }
             });
 
             it(`Số lượng file và dung lượng nằm trong khoảng cho phép, không tạo thư mục nào`, async () =>
@@ -171,8 +226,9 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
                   }
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await fileInput.sendKeys(valid1);
+
+                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await uploadButton.click();
 
                   // addFile = await pageElem.findElement(By.xpath(`//a[@role='button' and @title='Add...']`));
@@ -189,8 +245,9 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
                   }
-                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await fileInput.sendKeys(valid2);
+
+                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
                   await uploadButton.click();
 
                   let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
@@ -212,7 +269,117 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
 
                   await new Promise(resolve => setTimeout(resolve, 2000));
 
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)),10000);
+                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+                  await addFile.click();
+
+                  let fileInput;
+                  try
+                  {
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  catch (err)
+                  {
+                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+                        await temp.click();
+                        await new Promise(resolve => setTimeout(resolve, 3000));
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  await fileInput.sendKeys(valid1);
+
+                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+                  await uploadButton.click();
+
+                  await addFile.click();
+
+                  try
+                  {
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  catch (err)
+                  {
+                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+                        await temp.click();
+                        await new Promise(resolve => setTimeout(resolve, 3000));
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  await fileInput.sendKeys(valid2);
+
+                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+                  await uploadButton.click();
+
+                  let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
+                  await finishButton.click();
+
+                  await driver.wait(until.elementLocated(By.id(`page`)));
+                  let currentURL = await driver.getCurrentUrl();
+                  assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
+            });
+
+            it(`File nộp rỗng`, async () =>
+            {
+                  reset = false;
+
+                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+                  await addFile.click();
+
+                  let fileInput;
+                  try
+                  {
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  catch (err)
+                  {
+                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+                        await temp.click();
+                        await new Promise(resolve => setTimeout(resolve, 3000));
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  await fileInput.sendKeys(emptyFile);
+
+                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+                  await uploadButton.click();
+
+                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
+                  let errorText = await errorModal.getText();
+
+                  assert.match(errorText, /^The file '.+\..+' is either empty or a folder\. To upload folders zip them first\.$/)
+            });
+
+            it(`File nộp quá lớn`, async () =>
+            {
+                  reset = false;
+
+                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+                  await addFile.click();
+
+                  let fileInput;
+                  try
+                  {
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  catch (err)
+                  {
+                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+                        await temp.click();
+                        await new Promise(resolve => setTimeout(resolve, 3000));
+                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+                  }
+                  await fileInput.sendKeys(bigFile);
+
+                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+                  await uploadButton.click();
+
+                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
+                  let errorText = await errorModal.getText();
+
+                  assert.match(errorText, /^The file .+\..+ is too large\. The maximum size you can upload is \d+ [MK]B\.$/)
+            });
+
+            it(`Không nộp file nào`, async () =>
+            {
+                  reset = false;
+
+                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
                   await addFile.click();
 
                   let fileInput;
@@ -228,58 +395,26 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                         fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
                   }
                   let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await fileInput.sendKeys(valid1);
                   await uploadButton.click();
 
-                  await addFile.click();
-                  
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await fileInput.sendKeys(valid2);
-                  await uploadButton.click();
+                  let errorModal = await driver.wait(until.elementLocated(By.id('fp-msg-labelledby')), 10000);
+                  let errorText = await errorModal.getText();
 
-                  let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
-                  await finishButton.click();
-
-                  await driver.wait(until.elementLocated(By.id(`page`)));
-                  let currentURL = await driver.getCurrentUrl();
-                  assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
+                  assert.equal(errorText, "No files attached");
             });
-
-            // it(`File nộp rỗng`, async () =>
-            // {
-            // });
-
-            // it(`File nộp quá lớn`, async () =>
-            // {
-            // });
-
-            // it(`Không nộp file nào`, async () =>
-            // {
-            // });
 
             // it(`Số lượng file quá nhiều`, async () =>
             // {
             // });
       });
 
-      describe(`Decision table technique (10 testcases)`, () =>
-      {
+      // describe(`Decision table technique (10 testcases)`, () =>
+      // {
 
-      });
+      // });
 
-      describe(`Use-case testing technique (5 testcases)`, () =>
-      {
+      // describe(`Use-case testing technique (5 testcases)`, () =>
+      // {
 
-      });
+      // });
 });
