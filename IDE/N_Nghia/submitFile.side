@@ -1,0 +1,4475 @@
+{
+  "id": "aa8c759f-18f7-44f7-8b2d-ed84a6e8fa7c",
+  "version": "2.0",
+  "name": "submitFile",
+  "url": "https://sandbox402.moodledemo.net",
+  "tests": [{
+    "id": "38c24032-0e86-4edf-8ea4-719000d6609a",
+    "name": "A2 - Tạo assigment",
+    "commands": [{
+      "id": "b67b8fb4-f3e4-49c3-bc64-bac07a935b53",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfdce045-b3c5-41b9-a923-2d2e5958a239",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e6d3ee8-f181-44e0-8cf2-d40336ed986f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f62c77795c-navbar-nav > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f62c77795c-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "160e6ab9-5eba-4aa1-b364-100ae71fd5ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f709af19-5b50-4c9f-a4c4-618749955af2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div/input",
+      "targets": [
+        ["id=656f62cfe70ac656f62cfc61568-editingswitch", "id"],
+        ["name=setmode", "name"],
+        ["css=#\\36 56f62cfe70ac656f62cfc61568-editingswitch", "css:finder"],
+        ["xpath=//input[@id='656f62cfe70ac656f62cfc61568-editingswitch']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cc77f7d-4f84-45bb-96dd-86571ca68c73",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add an activity or resource')]",
+      "targets": [
+        ["css=#coursecontentcollapse0 > .btn", "css:finder"],
+        ["xpath=//div[@id='coursecontentcollapse0']/button", "xpath:idRelative"],
+        ["xpath=//li/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add an activity or resource')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "643cdecb-f040-4f80-88df-755d7f687b5b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a/div/img",
+      "targets": [
+        ["css=#all-6 .option:nth-child(1) .optionicon > .icon", "css:finder"],
+        ["xpath=//img[contains(@src,'https://sandbox402.moodledemo.net/theme/image.php/boost/assign/1701792087/monologo')]", "xpath:img"],
+        ["xpath=//div[@id='all-6']/div/div/div/a/div/img", "xpath:idRelative"],
+        ["xpath=//a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3ee16f6-1483-4aba-90eb-197cde40e853",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798621695_1029']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88f97228-9db4-44c9-ab7d-ce72404ff527",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798621695_1029']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "TEST ASSIGNMENT - SUBMISSION TEST"
+    }, {
+      "id": "680b03c8-e630-4051-a083-bfec766a1d5d",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_assignsubmission_file_maxfiles",
+      "targets": [
+        ["id=id_assignsubmission_file_maxfiles", "id"],
+        ["name=assignsubmission_file_maxfiles", "name"],
+        ["css=#id_assignsubmission_file_maxfiles", "css:finder"],
+        ["xpath=//select[@id='id_assignsubmission_file_maxfiles']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798621695_1080']/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08a265a9-93d4-4304-b8eb-9f285fb11aeb",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_assignsubmission_file_maxfiles",
+      "targets": [],
+      "value": "label=2"
+    }, {
+      "id": "7ffae911-2144-479f-b05a-5c8a510acfe5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton2",
+      "targets": [
+        ["id=id_submitbutton2", "id"],
+        ["name=submitbutton2", "name"],
+        ["css=#id_submitbutton2", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton2']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701798621695_1094']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "601bf721-4253-4369-8ce4-211d73fa0806",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "408aa5eb-6612-40f9-838b-391386b17a1d",
+    "name": "A1 - Đăng nhập bằng tài khoản admin",
+    "commands": [{
+      "id": "765f65ca-e4da-43aa-8a7b-c756654702ef",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "318d110c-0e52-45c4-96d2-1fc2132396fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b797b02d-3adb-4408-b305-52c9e7fd53d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ce24bcc-544e-4f5b-9794-959ce5cb283f",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a0f689-0a2e-4952-b5ab-f4e19d86f5c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798351532_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "3d1d09b2-1482-4c13-9e06-b4f8e3dc7c76",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandbox"
+    }, {
+      "id": "aaf502c5-0e35-4402-804a-d48218d89576",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0171384-3f87-4e9e-af81-c539442b9828",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f61e0cd1c9-navbar-nav > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f61e0cd1c9-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f9c61be-8848-4c49-aed4-c66ef2f07274",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8a36583d-94a5-4b77-aa6f-2f7360874cc6",
+    "name": "A3 - Thoát tài khoản admin và đăng nhập vào tài khoản sinh viên",
+    "commands": [{
+      "id": "f9ece188-8e00-4e5c-a13c-12076ea2185b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bd89bba-eb19-443c-9211-ac2022c3c19a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f71d875-9ad0-410d-8832-55735e68f794",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=AU", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8ed3e4d-728e-4565-b36c-30f43fe79eee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(12)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[10]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/logout.php?sesskey=D9jFoFzHVm')]", "xpath:href"],
+        ["xpath=//a[10]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd257f80-a727-4d23-b4f5-55ce356037b9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "468e74db-1aed-4199-8bac-489ccda9838f",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "750d9a13-95ed-48de-8330-0a35232c53d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798680865_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "6058e5dd-6395-4da8-9cee-36aa362a279a",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a118a5d-8ebc-4130-a349-a581f9ef075b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798680865_25']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandbox"
+    }, {
+      "id": "ed06f787-b28c-4451-a0c8-c9950473da58",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d92f85-6771-439f-a70b-38eaa3560fe1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6322c2409-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6322c2409-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6eb882d-8156-4756-bc5e-e4a5b30026cf",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "521ab793-2493-4a2d-b56b-05e812e4e25d",
+    "name": "Equivalence class partitioning technique - Số lượng file và dung lượng nằm trong khoảng cho phép, không tạo thư mục nào",
+    "commands": [{
+      "id": "0e379de7-cf66-4162-ae14-ecf837cbc3e0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb2cadf-e304-4bcd-8870-e56d29564140",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50cd8feb-229b-4640-8873-af900ff4615b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6352ab59b-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6352ab59b-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bc9695a-7258-497a-9fe7-cc542ecf20ba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3183c0d6-7485-4ea1-b782-0bbb8f6d863b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[29]", "xpath:attributes"],
+        ["xpath=//li[@id='module-32']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=32')])[3]", "xpath:href"],
+        ["xpath=//li[29]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ae79a48-578e-42fe-beb6-1f76df953633",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f63622162c8", "id"],
+        ["css=#single_button656f63622162c8", "css:finder"],
+        ["xpath=//button[@id='single_button656f63622162c8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f56938d7-c883-4b18-ac0b-e40b48090f43",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701798754227_526']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f47054c-f835-41b3-9d9c-0590c58709bb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_914", "id"],
+        ["css=#yui_3_18_1_1_1701798754227_914", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701798754227_914']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701798754227_915']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "092a076c-892c-4447-97ae-2b9ccd814ea7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[contains(.,' Private files')]",
+      "targets": [
+        ["linkText=Private files", "linkText"],
+        ["css=#fp-repo-656f6363deda5-5 > .nav-link", "css:finder"],
+        ["xpath=//div[@id='fp-repo-656f6363deda5-5']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[43]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Private files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89b03ebf-35fc-4330-a1b5-bfbfcf533fe6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_935", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701798754227_935", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701798754227_935']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_962']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df68d910-5c6d-44bb-8062-a25f7a09fad4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_935", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701798754227_935", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701798754227_935']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_962']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "75a311f3-6479-4714-afba-f24cdec40828",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_975", "id"],
+        ["css=#yui_3_18_1_1_1701798754227_975", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701798754227_975']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_976']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acbcd1f9-a432-41e5-bb35-b46d661a8a1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_535", "id"],
+        ["css=#yui_3_18_1_1_1701798754227_535", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701798754227_535']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701798754227_526']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba3d8747-22cc-4566-8394-920e12493ea7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/div/form/div/div",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_1024", "id"],
+        ["css=#yui_3_18_1_1_1701798754227_1024", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_1024']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_1064']/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/div/form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6330bb-f068-4405-a1d8-ab8ace17bb9c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_1025", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701798754227_1025", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701798754227_1025']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_1070']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81f869d5-21c1-46da-846f-4a7f674305d4",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_1025", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701798754227_1025", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701798754227_1025']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_1070']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile2.txt"
+    }, {
+      "id": "61e14dbf-e64e-49d2-b378-19f8dfbd5927",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701798754227_1077", "id"],
+        ["css=#yui_3_18_1_1_1701798754227_1077", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701798754227_1077']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701798754227_1078']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "883257e3-3227-4e7f-8d8d-d43b224bed17",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701798754227_1132']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78e38b08-23d0-4c51-94c4-a192537216d2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "599bddb9-0c68-42c0-9dc1-7a37bb1db5fd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button656f6377658708", "id"],
+        ["css=#single_button656f6377658708", "css:finder"],
+        ["xpath=//button[@id='single_button656f6377658708']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af51b484-c457-4b48-a359-c58c9c063224",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button656f637ad1acc8", "id"],
+        ["css=#single_button656f637ad1acc8", "css:finder"],
+        ["xpath=//button[@id='single_button656f637ad1acc8']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "637fef1b-6673-408b-b36f-9d07267a5a2c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "86054a07-71fd-4c80-9fb2-207c92781a7e",
+    "name": "Equivalence class partitioning technique - Số lượng file và dung lượng nằm trong khoảng cho phép, tạo 1 thư mục",
+    "commands": [{
+      "id": "80fda8c3-3195-4b79-b5b3-164e879785cb",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d00d131-b4fb-4a27-9140-bfa0e542cac3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56b86af9-1ff5-4cd4-be17-0a72902d5520",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f65e11bd19-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f65e11bd19-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4f6e853-a6d1-4035-a167-b93126050812",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=#yui_3_18_1_1_1701799396124_25 .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799396124_25']/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73613fab-a8a1-43b1-9cb4-ad2c3116977a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03efbf3d-a83e-46b3-97bd-38f8a306c745",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f65eb634368", "id"],
+        ["css=#single_button656f65eb634368", "css:finder"],
+        ["xpath=//button[@id='single_button656f65eb634368']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d3fd2f7-05d1-4785-846a-730c4f401ef9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799403398_364']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1e2a590-fea9-4425-8605-2ecb8791c338",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f65ed1e142", "id"],
+        ["css=#fm-mkdir-butcreate-656f65ed1e142", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f65ed1e142']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_459']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f35a3b1-73ba-4c39-9f0b-ea7cd39c8811",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb8e2ce5-8784-4d69-bb43-82b60c0b8d88",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d37847f-ec14-4cbe-9b59-cf51d468d650",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/div/div/a",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_584", "id"],
+        ["css=#yui_3_18_1_1_1701799403398_584", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799403398_584']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_585']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e97837e-9f8a-4afe-8a0a-29d0ed58a4c1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,' Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_988", "id"],
+        ["linkText=Upload a file", "linkText"],
+        ["css=#yui_3_18_1_1_1701799403398_988", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799403398_988']", "xpath:attributes"],
+        ["xpath=//div[@id='fp-repo-656f65ed1e142-3']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[44]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a7b2f3-05b5-493e-904a-1904c3642e0b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_996", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799403398_996", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799403398_996']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1023']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97e2ae48-543d-4d2b-9195-9ea112fed6c2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_996", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799403398_996", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799403398_996']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1023']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "78b0bdc9-c199-4b62-98a7-6a76dce3b888",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_1035", "id"],
+        ["css=#yui_3_18_1_1_1701799403398_1035", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701799403398_1035']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1036']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86765814-17e9-440a-8ac5-e097287f2c6c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/div/div/a",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_584", "id"],
+        ["css=#yui_3_18_1_1_1701799403398_584", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799403398_584']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_585']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a17314f0-cfae-46a5-8b51-bbbab896be22",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,' Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_988", "id"],
+        ["linkText=Upload a file", "linkText"],
+        ["css=#yui_3_18_1_1_1701799403398_988", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799403398_988']", "xpath:attributes"],
+        ["xpath=//div[@id='fp-repo-656f65ed1e142-3']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[46]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75d76427-8d22-4135-9266-7ac378f95a5c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_1141", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799403398_1141", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799403398_1141']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1168']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cad5f87-273c-4416-a3aa-023425aa3ab7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_1141", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799403398_1141", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799403398_1141']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1168']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile2.txt"
+    }, {
+      "id": "7de773e2-f03c-4ab5-9650-0ea02481fef6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799403398_1179", "id"],
+        ["css=#yui_3_18_1_1_1701799403398_1179", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701799403398_1179']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799403398_1180']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a39e990-f483-4c97-9af5-2bdc77402296",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701799403398_1244']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bd49184-52ec-49fc-b584-d09d44b83dfc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button656f660b2a2d38", "id"],
+        ["css=#single_button656f660b2a2d38", "css:finder"],
+        ["xpath=//button[@id='single_button656f660b2a2d38']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0de27401-443f-4c2d-8dfb-62586e3dfdbd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button656f660cbea178", "id"],
+        ["css=#single_button656f660cbea178", "css:finder"],
+        ["xpath=//button[@id='single_button656f660cbea178']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8cebd2c0-7fc5-4125-807c-aa0e8d47229e",
+    "name": "Equivalence class partitioning technique - File nộp rỗng",
+    "commands": [{
+      "id": "d4f17895-c2bb-4715-8723-7ba0f7f10042",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d50ff2a-c112-42af-baf0-e0fa2e5e9802",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3651718b-b07a-4694-a535-03f1939f2841",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f668f56184-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f668f56184-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "371138b9-2545-4659-af7a-39ce7137b8b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dfea7fe-ee30-404f-b9cb-d8542086248e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c65bc9-a5a6-4d16-87ff-2a832e25297c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6695364ad8", "id"],
+        ["css=#single_button656f6695364ad8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6695364ad8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d9305c3-0a9e-4a13-8a4c-a65669e45b17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799572778_364']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb916e7e-abd3-46a8-8057-83ee664cb5b3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799572778_797", "id"],
+        ["css=#yui_3_18_1_1_1701799572778_797", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701799572778_797']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799572778_798']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06d1649-b493-42a1-b645-3f813152e6aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799572778_806", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799572778_806", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799572778_806']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799572778_833']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00c34a4f-381d-48e5-8385-1c03a6a662c7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799572778_806", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799572778_806", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799572778_806']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799572778_833']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\EmptyFile.txt"
+    }, {
+      "id": "682bcfab-a0ef-4e89-a8a5-5b026b27822a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799572778_846", "id"],
+        ["css=#yui_3_18_1_1_1701799572778_846", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701799572778_846']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799572778_847']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "840375d0-e13f-4ab3-bb76-7acf67b42307",
+    "name": "Equivalence class partitioning technique - File nộp quá lớn",
+    "commands": [{
+      "id": "23018480-25d5-447f-90a3-8f4a7ff1ccb3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5d810a7-a6f1-4a18-b321-8b2bfb9f8e50",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa04a2dd-c3b0-45ca-bb80-104cf58c036d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f66db27a09-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f66db27a09-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e655d84-3f0c-41ca-bc56-fa59d759a8ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b21693b-d63e-497c-86e4-8047954dcf26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6818c4d-727a-4397-b924-6a9c356e75a2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f66e13e4558", "id"],
+        ["css=#single_button656f66e13e4558", "css:finder"],
+        ["xpath=//button[@id='single_button656f66e13e4558']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0650897-9cc7-4013-99f0-688742a803fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799648619_364']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e8910b1-1ab1-47b1-8acd-2158b8028c58",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799648619_796", "id"],
+        ["css=#yui_3_18_1_1_1701799648619_796", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701799648619_796']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701799648619_797']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6106d855-afc3-49e9-a9d7-d11b828efdf1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799648619_805", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799648619_805", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799648619_805']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799648619_832']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fb72dcc-4350-460f-909b-a06efd878a81",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799648619_805", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701799648619_805", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701799648619_805']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799648619_832']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\BigFile.pdf"
+    }, {
+      "id": "e19a5bab-2d96-40c5-9b63-2a694088c59b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701799648619_845", "id"],
+        ["css=#yui_3_18_1_1_1701799648619_845", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701799648619_845']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701799648619_846']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf70c78-fd75-426d-9c02-646e39ebc62d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d5f4a5e6-2556-4fa6-b8ac-fbdd2fbe8e4f",
+    "name": "Equivalence class partitioning technique - Không nộp file nào",
+    "commands": [{
+      "id": "7f2d42c6-9be3-4752-aa6d-83f51f865a57",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbe3929a-3ce3-4625-b92c-cd2fbe594bc8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3876201-0586-4fb7-ad57-b0a477935ef1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f68cd2426d-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f68cd2426d-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c1f4d10-bdd2-482a-b872-f10663016d83",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f15c8a6a-17fc-428e-a709-2f442211d0bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d12cb70-464e-4855-8940-2f824b04213b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f68d39b1cf8", "id"],
+        ["css=#single_button656f68d39b1cf8", "css:finder"],
+        ["xpath=//button[@id='single_button656f68d39b1cf8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef9af926-0662-4543-8d9f-2e77d1fc6e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800147417_379']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "065a9228-8fe4-412d-8ac4-5df8e9246ba2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800154922_382']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706edda5-cb98-492f-a8be-b9789987d94a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//div[@id='filemanager-656f68dca61a0']/div[2]/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66b76385-c1f2-4cc8-9e12-4db1a36dbca7",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800154922_391", "id"],
+        ["css=#yui_3_18_1_1_1701800154922_391", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800154922_391']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800154922_382']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa82c13b-403a-4954-a1c6-0029be6f2359",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800154922_811", "id"],
+        ["css=#yui_3_18_1_1_1701800154922_811", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800154922_811']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800154922_812']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "46f0e15d-d062-4418-a466-d1b5a3e806cb",
+    "name": "Decision table technique - Số lượng file và dung lượng nằm trong khoảng cho phép, không tạo thư mục nào",
+    "commands": [{
+      "id": "eab24d38-84f9-43fc-bb08-6f4e606bca43",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dac9f4fb-5f72-4265-aacc-bc3c6684ff85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6590a5c7-1fab-4de0-a813-f9ed578ceeca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6b1553336-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6b1553336-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed80d02-74a7-42a6-8919-d7ff9d1f23e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8eea9697-fb4c-47a8-8f25-5e61ac38afc1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33672af3-5c68-47e1-a4c9-3c7d3b0a6ee3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6b1b90e788", "id"],
+        ["css=#single_button656f6b1b90e788", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b1b90e788']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6baa6a6c-bf47-4c4b-8fe3-b641f3b2cc7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800731215_418']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "630d11b5-5ab4-47af-a4c0-99ee73d31db2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_849", "id"],
+        ["css=#yui_3_18_1_1_1701800731215_849", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800731215_849']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800731215_850']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae80ab0a-521a-4438-8026-ac1df96c9f0e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_858", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800731215_858", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800731215_858']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_885']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "789ef319-90d9-4abf-9b40-dc7dcb87f7cd",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_858", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800731215_858", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800731215_858']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_885']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "2dfe4cf9-4ce9-47c5-aa19-c0474a691ea8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_897", "id"],
+        ["css=#yui_3_18_1_1_1701800731215_897", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800731215_897']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_898']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e9686a9-6cf3-4c76-896a-8c65e607d6d5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_427", "id"],
+        ["css=#yui_3_18_1_1_1701800731215_427", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800731215_427']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800731215_418']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e708b5ad-9913-41ad-9f97-741350df4510",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_849", "id"],
+        ["css=#yui_3_18_1_1_1701800731215_849", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800731215_849']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800731215_850']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb1c1a02-e97b-46ad-a520-165846196957",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_990", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800731215_990", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800731215_990']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_1016']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9879f28-8b10-421c-bfd8-641de5fd1de6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_990", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800731215_990", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800731215_990']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_1016']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile2.txt"
+    }, {
+      "id": "df259ce8-dcc9-463d-bf61-b2253323a656",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800731215_1028", "id"],
+        ["css=#yui_3_18_1_1_1701800731215_1028", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800731215_1028']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800731215_1029']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38cb1ff3-358e-43fc-a761-04d6f4d147da",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800731215_1085']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe107aee-ece0-4172-85ec-cd269890727d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button656f6b2db4b0e8", "id"],
+        ["css=#single_button656f6b2db4b0e8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b2db4b0e8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06f3b445-4fc8-4140-b2ca-967fe1117e18",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button656f6b2f5db1b8", "id"],
+        ["css=#single_button656f6b2f5db1b8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b2f5db1b8']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "14677a38-d5e5-46e0-9808-8bff9496f3d4",
+    "name": "Decision table technique - Số lượng file và dung lượng nằm trong khoảng cho phép, tạo 1 thư mục",
+    "commands": [{
+      "id": "48b9389d-3155-489f-b536-8a30e13c006b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96ddd446-fe70-4f38-90f1-a8558faa3466",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a440db84-a9b7-4d42-b3e7-113bfb36bc81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6b476ca7c-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6b476ca7c-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92bb4f94-2992-4bbe-8274-3141d94ea610",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e84b9bb3-c9fd-4320-8775-57575caae8af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95ba7d2a-d3e7-47b6-8372-279309436c21",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6b4c8bc0d8", "id"],
+        ["css=#single_button656f6b4c8bc0d8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b4c8bc0d8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0440011e-e035-4214-ab04-fbfc0db878de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_418']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ad9f5d3-0653-482e-9866-e84cab33b2e1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6b4dd8adc", "id"],
+        ["css=#fm-mkdir-butcreate-656f6b4dd8adc", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6b4dd8adc']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_513']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e84bea6d-79b7-4ef5-b4ca-b9a215adf89b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_635']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12a16016-bfc8-45ba-a2ae-9a2e67a56ca5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_420']/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b67e461-05ba-4a61-9cdd-9cf2a1aaa439",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_637", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_637", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800780100_637']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_635']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db83dcea-6058-45ec-a724-c9d77628e407",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1040", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_1040", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800780100_1040']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_1041']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88166b08-8ad3-4123-852e-177299ff903f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1049", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800780100_1049", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800780100_1049']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1077']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae455658-4125-4b4b-9eef-4b1e18d46eda",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1049", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800780100_1049", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800780100_1049']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1077']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "7394ae3f-1b4c-4cbf-b657-8ab05aba310b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1089", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_1089", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800780100_1089']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1090']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23fb136d-46a6-4cfd-86b2-98a4077ba3d1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_637", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_637", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800780100_637']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_635']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d50d0ff2-30f5-4a0a-a48e-000a9006430f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1040", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_1040", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800780100_1040']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800780100_1041']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58cd933d-bbc1-455b-bc61-bd0af1701849",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1191", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800780100_1191", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800780100_1191']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1217']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90fc2a20-a99b-4e8f-9b11-06a162f87ebb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1191", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800780100_1191", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800780100_1191']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1217']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile2.txt"
+    }, {
+      "id": "5c29e3f0-8981-4e85-990d-90dfb9d88d8d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800780100_1229", "id"],
+        ["css=#yui_3_18_1_1_1701800780100_1229", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800780100_1229']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800780100_1230']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbc9af4d-07ed-4383-be9e-6fdacd3f3f91",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800780100_1296']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4940f62e-f0bf-400d-9ea6-f8220fce3cc8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button656f6b5d902928", "id"],
+        ["css=#single_button656f6b5d902928", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b5d902928']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13d754f8-7c1d-44fc-8afe-755069af7dfb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button656f6b5edce198", "id"],
+        ["css=#single_button656f6b5edce198", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b5edce198']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5cf91e23-5c7a-4319-bc1c-79072c97290c",
+    "name": "Decision table technique - Dung lượng file quá lớn, số lượng file nằm trong khoảng cho phép, không tạo thư mục nào",
+    "commands": [{
+      "id": "f6ba6c98-38de-4629-8a2d-4a9ae082973e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "808c1935-e448-46ee-9453-ae58e482e4e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5068b40-62bd-4c57-b949-fd58790321ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6b7573e38-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6b7573e38-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77fe7da4-9227-4364-8df4-519d9b87c3cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e8473e9-6689-443b-ad5a-1998846d34ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "319ffc60-97f5-4328-b5f1-be6a0f46f3cd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6b7bd45a68", "id"],
+        ["css=#single_button656f6b7bd45a68", "css:finder"],
+        ["xpath=//button[@id='single_button656f6b7bd45a68']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9703bd65-25c4-41da-aa49-2a90f305b81c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800827381_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5caf5aa-0166-4570-8ef0-30bd82d20602",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_855", "id"],
+        ["css=#yui_3_18_1_1_1701800827381_855", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800827381_855']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800827381_856']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09499258-9064-4b4f-93b0-379eaa02b364",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_864", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800827381_864", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800827381_864']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_890']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9536fba0-13bb-4a78-aa66-b037c21b05b1",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_864", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800827381_864", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800827381_864']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_890']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "8e2e1a98-d79f-4ed8-8d52-dd4f13379807",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_903", "id"],
+        ["css=#yui_3_18_1_1_1701800827381_903", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800827381_903']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_904']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0cd1ff2-c2ba-45d1-9dd2-e79ed9ef3260",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0abfe25d-3f8d-4d9d-9742-f7223b474989",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_433", "id"],
+        ["css=#yui_3_18_1_1_1701800827381_433", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800827381_433']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800827381_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fed6a8e-edc1-44ba-ad5a-19e7130f1c17",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_855", "id"],
+        ["css=#yui_3_18_1_1_1701800827381_855", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800827381_855']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800827381_856']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da8e2341-a89a-40c3-a81d-9a5c8dd5c53a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_997", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800827381_997", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800827381_997']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_1023']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ba0cdf5-98a9-424c-af34-1cdb1f3a1794",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_997", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800827381_997", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800827381_997']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_1023']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\BigFile.pdf"
+    }, {
+      "id": "384f7f1a-3778-4c4b-8e8b-2ce7d53aa6df",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800827381_1035", "id"],
+        ["css=#yui_3_18_1_1_1701800827381_1035", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800827381_1035']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800827381_1036']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5136fd84-3798-4350-a5e9-c03882212f7b",
+    "name": "Decision table technique - Dung lượng file quá lớn, số lượng file nằm trong khoảng cho phép, tạo 1 thư mục",
+    "commands": [{
+      "id": "e22d0063-bb4d-4209-b4a1-ca990cdebe04",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fa6be2a-5451-431d-a828-aede44f25a3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31ab9ac8-9e3e-48ff-8179-48410c71b9b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6ba65c111-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6ba65c111-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e87de23-7b16-40af-9b83-ff12ebc41a85",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95589bd7-3817-404f-9cfd-38bbdb9556d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be08d748-11b0-4ea9-b72d-fdd0ed201c73",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6bac43a5f8", "id"],
+        ["css=#single_button656f6bac43a5f8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6bac43a5f8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15494678-06c6-4d9b-9c58-12ed171eac19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ee1b979-2489-47cd-bc28-e9c0edec0f72",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6bad66645", "id"],
+        ["css=#fm-mkdir-butcreate-656f6bad66645", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6bad66645']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_519']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0bfdf64-f1f7-477d-bdda-a407e6928251",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_641']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0f45877-a70d-4ae4-9969-609d54ed4874",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_426']/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0ae9eb0-a422-4c48-9a89-9b4f80b9e276",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_643", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_643", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800875680_643']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_641']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab42a8f-b92e-45ae-adeb-5ea750f51edc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1004", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_1004", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800875680_1004']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_1005']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ecce53a-82e3-48b1-bd48-9e71f48355e0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["css=#fp-repo-656f6bad66645-3 .fp-repo-name", "css:finder"],
+        ["xpath=//div[@id='fp-repo-656f6bad66645-3']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "638f0c34-0adb-4ff8-ba3a-f4ee99d50eb0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1004", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_1004", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800875680_1004']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_1005']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cfcf792-e7ed-4010-8203-d43c6a19d849",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1055", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800875680_1055", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800875680_1055']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1082']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0c07e5-ed23-455b-bc9b-59462cd43b42",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1055", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800875680_1055", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800875680_1055']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1082']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "38ad4967-41ce-4d63-9249-33121ece5ff8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1095", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_1095", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800875680_1095']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1096']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d28b0042-adb2-4509-bc23-357eab14ef21",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a440acb7-6e4a-44f6-a9c0-8332177c3421",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_643", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_643", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800875680_643']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_641']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41c22806-c54b-45f9-b4f5-cd036659e336",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,' Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1005", "id"],
+        ["linkText=Upload a file", "linkText"],
+        ["css=#yui_3_18_1_1_1701800875680_1005", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800875680_1005']", "xpath:attributes"],
+        ["xpath=//div[@id='fp-repo-656f6bad66645-3']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[46]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8865801d-1585-4d39-9bb2-562c68698b91",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1200", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800875680_1200", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800875680_1200']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1225']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5156abe-5e8b-41e7-9783-f390f72a1764",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1200", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800875680_1200", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800875680_1200']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1225']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\BigFile.pdf"
+    }, {
+      "id": "06639aae-bc43-47b8-9ec7-ff052b176c02",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800875680_1237", "id"],
+        ["css=#yui_3_18_1_1_1701800875680_1237", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800875680_1237']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800875680_1238']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f093bd11-ffa2-4864-bdc8-6bdec42729fd",
+    "name": "Decision table technique - File rỗng, số lượng file nằm trong khoảng cho phép, không tạo thư mục nào",
+    "commands": [{
+      "id": "311e97c1-f349-4149-ba34-d2f735224ff7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e48be6c4-3733-4273-b3a1-38c1802a82e7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "435fe456-112b-469a-be21-fbfaf3c8cf60",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6bd29bdc8-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6bd29bdc8-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bd2a2be-beb7-40c0-9748-c9ac3aa98416",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a65bf0-652d-475a-a113-e747ccc8c62a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e15e62b5-4d55-470f-8c4a-ce5dd9f01257",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6bd865f848", "id"],
+        ["css=#single_button656f6bd865f848", "css:finder"],
+        ["xpath=//button[@id='single_button656f6bd865f848']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23a6b773-0893-454f-b655-2ed4fb9f9449",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a119e8a-268e-48e9-be7b-21d1a0b3ef61",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_854", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_854", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800919870_854']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_855']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "490b487d-5a92-447e-8b8c-9e287c58ccfa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_863", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800919870_863", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800919870_863']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_890']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b17b65ae-ceaf-4259-970d-9bd66f05c68f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_863", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800919870_863", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800919870_863']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_890']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "56e45d3f-9f20-41e8-83a2-3c934cca893d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_902", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_902", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800919870_902']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_903']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d27956a5-f426-432a-9e7d-8cb4daf3bbc4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_433", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_433", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800919870_433']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08bda3a6-dc19-43d0-8557-0ceff7e7301a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_433", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_433", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800919870_433']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79baf467-0746-47e2-a9eb-1036feb332eb",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_433", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_433", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701800919870_433']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_424']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6607481f-d68e-47f1-a97f-fab0a0670fc0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_854", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_854", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800919870_854']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800919870_855']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d32944-46af-4b84-8d87-873132ef4daf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_997", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800919870_997", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800919870_997']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_1024']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5de12c23-7062-4594-a1c8-6911c05857e8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_997", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800919870_997", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800919870_997']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_1024']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\EmptyFile.txt"
+    }, {
+      "id": "49b21ca8-7d9c-4f8b-b88f-2e61e3ffdb00",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800919870_1036", "id"],
+        ["css=#yui_3_18_1_1_1701800919870_1036", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800919870_1036']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800919870_1037']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28c50ee2-ee51-463e-be65-e7935d9e3244",
+    "name": "Decision table technique - File rỗng, số lượng file nằm trong khoảng cho phép, tạo 1 thư mục",
+    "commands": [{
+      "id": "ee9eb81c-d29e-41e2-811f-eb6f0848af74",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f22649a6-cb65-4156-abe4-34738b18a16d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb8a36bd-722c-42f5-abb7-8f339272675b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6bfc348aa-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6bfc348aa-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99e460d4-4d88-4da1-b30b-59be3f75fc1b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ef7f6bb-9ccc-4923-81ca-bd980e5a4fa5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7f3185-f59e-414b-aa1c-f3eaa3969886",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5207950c-450f-4053-a6be-f4c014742de5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6c01d3a4b8", "id"],
+        ["css=#single_button656f6c01d3a4b8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6c01d3a4b8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56b2cabd-bde3-48b3-a174-f66db62d523b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_430']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "093cbf94-a8ab-4c44-8886-48513b528012",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6c03eaa3f", "id"],
+        ["css=#fm-mkdir-butcreate-656f6c03eaa3f", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6c03eaa3f']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_525']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7125cbb8-cc08-49d0-9680-cb5324d2d19e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_647']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb59dbcc-1626-4ff7-b03d-bad1799b90e0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1051", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_1051", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800962158_1051']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_1052']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac56efc0-3f2c-4182-8ad9-5893aae6e1be",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1060", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800962158_1060", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800962158_1060']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1087']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92ab5c18-29c5-46f9-9ab1-97c7f46a530d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1060", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800962158_1060", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800962158_1060']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1087']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "e39095a0-3bcb-4f29-a05e-193ed7f7ac4b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1100", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_1100", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800962158_1100']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1101']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "659b271c-1f36-495f-9cc3-80f97007582e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div[2]/div/div/div/a",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_647", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_647", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_647']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_648']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05841472-05b5-4464-9fd4-e6a8a04aeb97",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div/div[2]/div/div/div/a",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_647", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_647", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_647']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_648']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48372e4e-531d-4c34-a45f-83caaa717b68",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div/div[2]/div/div/div/a",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_647", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_647", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_647']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_648']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b91a248-818b-437c-b704-177da562b465",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1051", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_1051", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800962158_1051']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701800962158_1052']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61912e56-2319-4766-826b-0a9605fb27b4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1205", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800962158_1205", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800962158_1205']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1230']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef7c041f-d3eb-41e7-82b6-68f9605e414b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1205", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701800962158_1205", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701800962158_1205']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1230']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\EmptyFile.txt"
+    }, {
+      "id": "a2dbe21c-07a6-4607-8f26-a5b98658317e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701800962158_1243", "id"],
+        ["css=#yui_3_18_1_1_1701800962158_1243", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701800962158_1243']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701800962158_1244']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1186d3ab-b783-45da-818d-174ba0fe0e21",
+    "name": "Decision table technique - Số lượng file bằng 0, không tạo thư mục nào",
+    "commands": [{
+      "id": "c58f705a-7ef8-4798-9c71-e137ac03638a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65d8acd1-54bc-45c9-b1e3-6605937125ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "529e3d0d-159d-45f7-8f76-d3f1b1e82f77",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6c20a07ca-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6c20a07ca-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7303fa58-d09f-48b7-abc2-a051f677d6ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75f1f660-1be2-4528-a8fc-fe81660076e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7880cad-53cf-4e60-9a7b-7575cadf27cd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6c25522b38", "id"],
+        ["css=#single_button656f6c25522b38", "css:finder"],
+        ["xpath=//button[@id='single_button656f6c25522b38']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8e9bea6-76e8-4a5b-87b5-7d071d76b318",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701800996960_427']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd2be26e-1fce-446e-965a-dc37ea79f7e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801000697_430']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0c82d70-f116-498b-9873-9fe296219aee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801000697_860", "id"],
+        ["css=#yui_3_18_1_1_1701801000697_860", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801000697_860']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801000697_861']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c8f3464-aa3f-4607-8b3e-edfa399b6f56",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801000697_898", "id"],
+        ["css=#yui_3_18_1_1_1701801000697_898", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801000697_898']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801000697_899']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e933d6f8-2f8c-4bf3-953d-cfee0786dc7b",
+    "name": "Decision table technique - Số lượng file bằng 0,  tạo 1 thư mục",
+    "commands": [{
+      "id": "17172a45-5d00-4685-87f6-1a978166defd",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed7016ce-7181-4287-bdc7-71a38dcae6df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351d6fa6-e282-4671-baf5-99d20ee81654",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6c408cfd9-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6c408cfd9-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b75bd7e3-0eb0-44e9-879a-30120d24805c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d840e93d-a6d8-4950-a0ba-874d959938df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ce8fc8-2887-43a4-8bfc-aaeda1500b7d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6c459cc3f8", "id"],
+        ["css=#single_button656f6c459cc3f8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6c459cc3f8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8088321f-9e26-4f61-a5b0-92cb3c1cb017",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801029364_436']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbfaab88-be8a-4a6f-9485-d8a4aed43cb1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6c4722b50", "id"],
+        ["css=#fm-mkdir-butcreate-656f6c4722b50", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6c4722b50']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801029364_531']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40b6addf-2399-4564-a118-76f657c25981",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "beb03370-a4cb-4797-b1c6-fc8e0f9a5230",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb1c4d1b-0cad-44d5-bb85-6dd9247c8cbf",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801029364_657']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddda86f4-72ab-46f9-b091-91a363c61cbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801032871_449']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f1a1c43-d957-497f-894d-f55fabc4af04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801032871_881", "id"],
+        ["css=#yui_3_18_1_1_1701801032871_881", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801032871_881']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801032871_882']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "52dc0ace-6c5a-42f0-9681-fd1558400e87",
+    "name": "Use-case testing technique - Nộp bài thành công",
+    "commands": [{
+      "id": "58bea4fa-d5a7-485e-80e5-ab17950ed71b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8618eae-63fb-42c4-b729-4d1748fe751d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bdb014b-41e4-4c13-885f-b094dcdcf708",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6c93bbaed-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6c93bbaed-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf25397-0fd0-4fd2-aec8-ed641ea68ad5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f264cd5-3bdc-4072-8038-eff655ab0ffe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a08a8b42-1c10-47a5-8563-a6223064d211",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6c98c6ac98", "id"],
+        ["css=#single_button656f6c98c6ac98", "css:finder"],
+        ["xpath=//button[@id='single_button656f6c98c6ac98']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddce25f4-e209-487f-8536-edbe90a5b3d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801112340_442']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dde1a4d1-e988-43e0-94d6-9888db4d7c3a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6c9a28149", "id"],
+        ["css=#fm-mkdir-butcreate-656f6c9a28149", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6c9a28149']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_537']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afdfbb7c-3c59-493a-858d-f1278051f88e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Files",
+      "targets": [
+        ["linkText=Files", "linkText"],
+        ["css=.fp-path-folder-name", "css:finder"],
+        ["xpath=//a[contains(text(),'Files')]", "xpath:link"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801112340_415']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[31]", "xpath:href"],
+        ["xpath=//div[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa6efaa-3217-4ef9-8300-a9842040b686",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801112340_658']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "918259b1-327d-4716-9169-3fab932fb45e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1062", "id"],
+        ["css=#yui_3_18_1_1_1701801112340_1062", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801112340_1062']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801112340_1063']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "248a9a0e-7636-4058-9798-9ed114330521",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1071", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801112340_1071", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801112340_1071']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1098']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "330285d9-60c4-4dd0-8efb-d56b77be4fcd",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1071", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801112340_1071", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801112340_1071']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1098']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile1.txt"
+    }, {
+      "id": "b7f677c3-573b-404c-a2e5-278ce2d2dee9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1110", "id"],
+        ["css=#yui_3_18_1_1_1701801112340_1110", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801112340_1110']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1111']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5d47d6a-b59a-4652-b5e6-40da7ca6898b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=id_cancel",
+      "targets": [
+        ["id=id_cancel", "id"],
+        ["name=cancel", "name"],
+        ["css=#id_cancel", "css:finder"],
+        ["xpath=//input[@id='id_cancel']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_buttonar']/div[2]/fieldset/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44f68646-c6d2-4c0d-b0e5-55a790338c1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_660", "id"],
+        ["css=#yui_3_18_1_1_1701801112340_660", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701801112340_660']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801112340_658']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "532ed4b2-c0d8-474f-b8ff-ad1e285d636f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1062", "id"],
+        ["css=#yui_3_18_1_1_1701801112340_1062", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801112340_1062']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801112340_1063']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab0ff47-c87f-452b-a0bc-5b47ee142ac2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1216", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801112340_1216", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801112340_1216']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1242']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad74e23-7946-4e4f-81ae-6a1efab2d320",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1216", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801112340_1216", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801112340_1216']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1242']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\ValidFile2.txt"
+    }, {
+      "id": "750da17e-eca1-4946-b3b8-c9ab062167bb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801112340_1255", "id"],
+        ["css=#yui_3_18_1_1_1701801112340_1255", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801112340_1255']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801112340_1256']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66cce718-7aaa-46fe-8585-734628909e08",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801112340_1321']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0658b8-2ba3-4969-a7e0-213ae73e58f9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button656f6ca918d638", "id"],
+        ["css=#single_button656f6ca918d638", "css:finder"],
+        ["xpath=//button[@id='single_button656f6ca918d638']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0a128ca-a0f1-40a9-9a1a-b1191300e690",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button656f6caa0e07b8", "id"],
+        ["css=#single_button656f6caa0e07b8", "css:finder"],
+        ["xpath=//button[@id='single_button656f6caa0e07b8']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fab99782-32e8-457b-826c-ef6e4d42e3be",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c630bab3-3cd1-488b-a139-ae1ed60cae4e",
+    "name": "Use-case testing technique - Hệ thống báo lỗi file quá lớn",
+    "commands": [{
+      "id": "550414e8-c9f8-43cc-b5b6-fa46e41a5647",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b2fa8c0-54a7-4367-915f-01e0140ac1c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b15d8a7-3591-44cd-858c-a5341d4e0452",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6cbecc5e7-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6cbecc5e7-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68bd962f-9141-45c3-94f6-9ca24aa105e8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78909d6f-7df2-4a72-bf90-662b69c007bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85763af0-1d46-491e-b400-f248d2803691",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6cc3c09b88", "id"],
+        ["css=#single_button656f6cc3c09b88", "css:finder"],
+        ["xpath=//button[@id='single_button656f6cc3c09b88']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "306fb2ea-978a-4fea-a5c6-c99632390e09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801155441_442']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47155e0c-404e-44ac-b1bd-91fbfcd7d4b7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6cc53f4fa", "id"],
+        ["css=#fm-mkdir-butcreate-656f6cc53f4fa", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6cc53f4fa']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801155441_537']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fbcb9e2-bfa6-480a-be62-a4b2077872b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801155441_659']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f536a390-55fe-48a4-beaa-dac96b7723b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801155441_444']/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3435cd07-911a-405d-ab5f-2e9654aebc3d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801155441_661", "id"],
+        ["css=#yui_3_18_1_1_1701801155441_661", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701801155441_661']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801155441_659']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22c66f57-9eef-4383-8e14-1fb162303685",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801155441_1062", "id"],
+        ["css=#yui_3_18_1_1_1701801155441_1062", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801155441_1062']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801155441_1063']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c412855-ca24-4191-a0c0-9cf8cd0a776b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801155441_1071", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801155441_1071", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801155441_1071']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801155441_1097']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "434bbaf7-7723-4442-a81f-4c229c0c62e0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801155441_1071", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801155441_1071", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801155441_1071']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801155441_1097']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\BigFile.pdf"
+    }, {
+      "id": "6265795a-5695-4fa7-87f5-daaf5089e041",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801155441_1110", "id"],
+        ["css=#yui_3_18_1_1_1701801155441_1110", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801155441_1110']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801155441_1111']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "237eb01a-1fb4-4631-ade2-b90d7d2a54be",
+    "name": "Use-case testing technique - Hệ thống báo lỗi file rỗng",
+    "commands": [{
+      "id": "84b8fb4a-5669-49d7-8369-e3249b09e1fe",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "529f2503-3f9b-49e4-b8a0-aa38cbb50fa5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3bf1587-7d4d-4731-b3be-8b8379c51723",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6cdfc9faa-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6cdfc9faa-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1847dc6-f351-448b-9e70-6c108394df8e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8166494-adb1-4ab9-b1a5-3f4f546348f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf37147f-ab7b-4794-8439-db56a83af276",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6ce50cc188", "id"],
+        ["css=#single_button656f6ce50cc188", "css:finder"],
+        ["xpath=//button[@id='single_button656f6ce50cc188']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "418c0fee-11c2-4748-9540-d6622cb7d637",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-folder-o",
+      "targets": [
+        ["css=.fa-folder-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801188603_442']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e32e90-1b98-4901-8b18-eeba3077781d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Create folder')]",
+      "targets": [
+        ["id=fm-mkdir-butcreate-656f6ce65b609", "id"],
+        ["css=#fm-mkdir-butcreate-656f6ce65b609", "css:finder"],
+        ["xpath=//button[@id='fm-mkdir-butcreate-656f6ce65b609']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801188603_537']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[3]/div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create folder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c06442d-2580-410e-b15d-647c02a2dd84",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801188603_444']/div/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf4c1d3-696c-4e7e-b934-6b5a0d6db058",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801188603_658']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075fea6f-5a81-420d-8b3a-49878b2ee5a8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//div[2]/div/div/div/a/i",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801188603_660", "id"],
+        ["css=#yui_3_18_1_1_1701801188603_660", "css:finder"],
+        ["xpath=//i[@id='yui_3_18_1_1_1701801188603_660']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801188603_658']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a943c88f-ec8b-45c4-ae90-e2953e430987",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,' Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801188603_1064", "id"],
+        ["linkText=Upload a file", "linkText"],
+        ["css=#yui_3_18_1_1_1701801188603_1064", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801188603_1064']", "xpath:attributes"],
+        ["xpath=//div[@id='fp-repo-656f6ce65b609-3']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[44]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "227111ae-8ff9-4694-b7d0-2817fa3c2294",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801188603_1072", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801188603_1072", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801188603_1072']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801188603_1099']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f84a13-ef21-41c4-b819-d66d5128e426",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801188603_1072", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1701801188603_1072", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1701801188603_1072']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801188603_1099']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\Users\\APC\\Desktop\\EmptyFile.txt"
+    }, {
+      "id": "9882814d-d4f5-4fe2-be19-c9a37fdd8590",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801188603_1111", "id"],
+        ["css=#yui_3_18_1_1_1701801188603_1111", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801188603_1111']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801188603_1112']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df4e1117-e4ae-4246-b684-96eb98e07e09",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7fdeb078-f0e7-4c36-94c5-c47e1dc136f5",
+    "name": "Use-case testing technique - Hệ thống báo lỗi không có file nào được chọn để gửi",
+    "commands": [{
+      "id": "09c48b6b-b9e0-4de1-a893-2bf986618200",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4fd197a-87aa-4d7e-8d43-ebfc12f753e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bc127bf-2fb7-4799-b364-42511ca0d04b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f6cff42560-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f6cff42560-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0684b72-dcc1-467e-a84b-24ed7264c5a8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40530430-2587-4d8e-be61-9f40f3d14936",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modtype_assign .aalink",
+      "targets": [
+        ["css=.modtype_assign .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[2]", "xpath:attributes"],
+        ["xpath=//li[@id='module-4']/div/div[2]/div/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/mod/assign/view.php?id=4')])[3]", "xpath:href"],
+        ["xpath=//li[2]/div/div[2]/div/div/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81949b93-e3ec-4539-b7fd-376d4f82f02b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button656f6d0424af98", "id"],
+        ["css=#single_button656f6d0424af98", "css:finder"],
+        ["xpath=//button[@id='single_button656f6d0424af98']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "861aecb5-f603-4cd9-91be-4f2fada7bbe3",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801219829_439']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f993c2-d9ff-46a2-b23b-89c6d528a289",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801221689_442']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98bdbd5e-ecc9-40a2-8a1e-4df37b1f02f5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801221689_872", "id"],
+        ["css=#yui_3_18_1_1_1701801221689_872", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1701801221689_872']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701801221689_873']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5bf235c-f3c0-4d92-b807-aef67a4e0abd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801221689_910", "id"],
+        ["css=#yui_3_18_1_1_1701801221689_910", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801221689_910']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801221689_911']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c246e991-2a84-4b0a-a271-350c30a5e2f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fp-upload-btn",
+      "targets": [
+        ["css=.fp-upload-btn", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801221689_839']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd25b085-020d-45db-8d10-758c875636db",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701801221689_910", "id"],
+        ["css=#yui_3_18_1_1_1701801221689_910", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701801221689_910']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701801221689_911']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb302d42-3c3f-43b8-9fff-c638a3679258",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bcb1420b-83cd-4b67-a911-07335d48d93e",
+    "name": "Z - Thoát tài khoản sinh viên, đăng nhập vào tài khoản admin và xóa assignment",
+    "commands": [{
+      "id": "8d5ffda2-af03-4e61-a257-85f642c0702e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f8e5306a-a805-4792-8bd3-20de76bcf061",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x960",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbc841c2-c3aa-49a5-a594-f9b3a59787bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=SS", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'SS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a19600bf-a869-4d79-a40e-24b4ec1c7825",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/logout.php?sesskey=CHp2KkBcqd')]", "xpath:href"],
+        ["xpath=//a[9]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7b7354f-c748-44fb-b8c1-80ce3d20ddca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de34389f-d957-4db0-a02f-5a49af343621",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b25e672-0fc8-4b14-aca9-b0128f2a5af8",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701802717346_20']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "af9c6315-592a-4928-b868-ea74ba424b8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1199b12d-c05c-4bbc-a4c3-78a2c375a662",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701802717346_25']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "sandbox"
+    }, {
+      "id": "4e2ef8cb-7312-437b-9be3-e777cbbb7cd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4715490d-2186-4dc8-b9e5-459f468f163f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=#moremenu-656f72e632b41-navbar-nav .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-656f72e632b41-navbar-nav']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://sandbox402.moodledemo.net/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a718874d-0547-432b-9893-5aae5bff0cc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=My first course",
+      "targets": [
+        ["linkText=My first course", "linkText"],
+        ["css=.odd .aalink", "css:finder"],
+        ["xpath=//a[contains(text(),'My first course')]", "xpath:link"],
+        ["xpath=//div[@id='frontpage-available-course-list']/div/div/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/course/view.php?id=2')]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'My first course')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1252fcf-68da-4978-88d0-1376ce8f6d35",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/div/input",
+      "targets": [
+        ["id=656f72e9e263d656f72e9c91168-editingswitch", "id"],
+        ["name=setmode", "name"],
+        ["css=#\\36 56f72e9e263d656f72e9c91168-editingswitch", "css:finder"],
+        ["xpath=//input[@id='656f72e9e263d656f72e9c91168-editingswitch']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aed523b-a3fe-41b5-a5f1-15926c630a9e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[2]/div[2]/div[2]/div[2]/div/div/div/div/a/i",
+      "targets": [
+        ["css=#action-menu-toggle-7 > .icon", "css:finder"],
+        ["xpath=//a[@id='action-menu-toggle-7']/i", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/div[2]/div[2]/div/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a836cf35-6e98-422c-8389-ef457035dd69",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[2]/div[2]/div[2]/div[2]/div/div/div/div/div/a[8]/span",
+      "targets": [
+        ["id=actionmenuaction-43", "id"],
+        ["css=#actionmenuaction-43", "css:finder"],
+        ["xpath=//span[@id='actionmenuaction-43']", "xpath:attributes"],
+        ["xpath=//div[@id='action-menu-7-menu']/a[8]/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/div[2]/div[2]/div/div/div/div/div/a[8]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20cac621-1589-4d05-8212-af8e93a735de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//body[@id='page-course-view-topics']/div[8]/div[2]/div/div/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f39b8a6c-7220-4f79-b3c3-51b49f272f04",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["linkText=AU", "linkText"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'AU')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d14116-ac81-4f3b-bb63-8392c59db7f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["linkText=Log out", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(12)", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[10]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox402.moodledemo.net/login/logout.php?sesskey=6VxtCCwVBR')]", "xpath:href"],
+        ["xpath=//a[10]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "948ffc8d-a716-4760-92f3-0a758b52e34c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c4a7f8bc-9466-4b6f-bbdf-cf828cde84b8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38c24032-0e86-4edf-8ea4-719000d6609a"]
+  }],
+  "urls": ["https://sandbox402.moodledemo.net/"],
+  "plugins": []
+}

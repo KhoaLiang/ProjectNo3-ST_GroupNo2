@@ -1,4 +1,4 @@
-const { By, Builder, until } = require("selenium-webdriver");
+const { By, Builder, until, Capabilities } = require("selenium-webdriver");
 const assert = require("assert");
 
 describe("Test trên chrome (tổng 43 testcases)", function ()
@@ -9,7 +9,14 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
 
       beforeAll(async function ()
       {
-            driver = await new Builder().forBrowser("chrome").build();
+            const chromeOptions = {
+                  args: ['--guest'],
+            };
+
+            const capabilities = Capabilities.chrome();
+            capabilities.set('goog:chromeOptions', chromeOptions);
+
+            driver = await new Builder().withCapabilities(capabilities).forBrowser("chrome").build();
 
             // Trước tiên người dùng cần phải đăng nhập
             await driver.get("https://sandbox.moodledemo.net/login/index.php?lang=en");
@@ -1470,7 +1477,7 @@ describe("Test trên chrome (tổng 43 testcases)", function ()
             })
       });
 
-      //afterAll(async () => await driver.quit());
+      afterAll(async () => await driver.quit());
 });
 
 describe("Test trên edge (tổng 43 testcases)", function ()
@@ -1481,7 +1488,14 @@ describe("Test trên edge (tổng 43 testcases)", function ()
 
       beforeAll(async function ()
       {
-            driver = await new Builder().forBrowser("MicrosoftEdge").build();
+            const edgeOptions = {
+                  args: ['--guest'],
+            };
+
+            const capabilities = Capabilities.edge();
+            capabilities.set('ms:edgeOptions', edgeOptions);
+
+            driver = await new Builder().withCapabilities(capabilities).forBrowser("MicrosoftEdge").build();
 
             // Trước tiên người dùng cần phải đăng nhập
             await driver.get("https://sandbox.moodledemo.net/login/index.php?lang=en");
@@ -2942,5 +2956,5 @@ describe("Test trên edge (tổng 43 testcases)", function ()
             })
       });
 
-      //afterAll(async () => await driver.quit());
+      afterAll(async () => await driver.quit());
 });
