@@ -10,7 +10,7 @@ const assert = require("assert");
 const path = require("path");
 
 describe("Test trên chrome", function () {
-  jest.setTimeout(600000);
+  jest.setTimeout(200000);
 
   let driver;
   let Subject, Message;
@@ -57,7 +57,44 @@ describe("Test trên chrome", function () {
     await save.click();
   });
   afterAll(async function () {
-    // driver.close();
+    try {
+      await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2");
+      let mode = await driver.wait(
+        until.elementLocated(
+          By.xpath("//div[@id='usernavigation']/form/div/div/input")
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(mode), 10000);
+      await mode.click();
+
+      let setting = await driver.wait(
+        until.elementLocated(
+          By.xpath(
+            `//div[@data-activityname="Trang 's Forum"]//a[@role="button"]`
+          )
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(setting), 10000);
+      await setting.click();
+
+      let remove = await driver.wait(
+        until.elementLocated(By.linkText(`Delete`)),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(remove), 10000);
+      await remove.click();
+      let confirm = await driver.wait(
+        until.elementLocated(
+          By.xpath("//section[@id='region-main']/div/div[2]/div/form/button")
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(confirm), 10000);
+      await confirm.click();
+    } catch (error) {}
+    driver.close();
   });
   describe("Equivalence class partitioning technique (6 testcases)", () => {
     beforeEach(async function () {
@@ -1179,7 +1216,7 @@ describe("Test trên chrome", function () {
   });
 });
 describe("Test trên Edge", function () {
-  jest.setTimeout(600000);
+  jest.setTimeout(200000);
 
   let driver;
   let Subject, Message;
@@ -1226,7 +1263,44 @@ describe("Test trên Edge", function () {
     await save.click();
   });
   afterAll(async function () {
-    // driver.close();
+    try {
+      await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2");
+      let mode = await driver.wait(
+        until.elementLocated(
+          By.xpath("//div[@id='usernavigation']/form/div/div/input")
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(mode), 10000);
+      await mode.click();
+
+      let setting = await driver.wait(
+        until.elementLocated(
+          By.xpath(
+            `//div[@data-activityname="Trang 's Forum"]//a[@role="button"]`
+          )
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(setting), 10000);
+      await setting.click();
+
+      let remove = await driver.wait(
+        until.elementLocated(By.linkText(`Delete`)),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(remove), 10000);
+      await remove.click();
+      let confirm = await driver.wait(
+        until.elementLocated(
+          By.xpath("//section[@id='region-main']/div/div[2]/div/form/button")
+        ),
+        10000
+      );
+      await driver.wait(until.elementIsVisible(confirm), 10000);
+      await confirm.click();
+    } catch (error) {}
+    driver.close();
   });
   describe("Equivalence class partitioning technique (6 testcases)", () => {
     beforeEach(async function () {
