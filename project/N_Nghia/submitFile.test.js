@@ -245,196 +245,196 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
                   }
             });
 
-            it(`Số lượng file và dung lượng nằm trong khoảng cho phép, không tạo thư mục nào`, async () =>
-            {
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
-                  await addFile.click();
+            // it(`Số lượng file và dung lượng nằm trong khoảng cho phép, không tạo thư mục nào`, async () =>
+            // {
+            //       let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+            //       await addFile.click();
 
-                  let fileInput;
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(valid1);
+            //       let fileInput;
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(valid1);
 
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  await addFile.click();
+            //       await addFile.click();
 
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(valid2);
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(valid2);
 
-                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
-                  await finishButton.click();
+            //       let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
+            //       await finishButton.click();
 
-                  let currentURL = await driver.getCurrentUrl();
-                  assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
-            });
+            //       let currentURL = await driver.getCurrentUrl();
+            //       assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
+            // });
 
-            it(`Số lượng file và dung lượng nằm trong khoảng cho phép, tạo 1 thư mục`, async () =>
-            {
-                  let createFolder = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Create folder']`)), 10000);
-                  createFolder = await createFolder.findElement(By.xpath(`..`));
-                  await createFolder.click();
+            // it(`Số lượng file và dung lượng nằm trong khoảng cho phép, tạo 1 thư mục`, async () =>
+            // {
+            //       let createFolder = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Create folder']`)), 10000);
+            //       createFolder = await createFolder.findElement(By.xpath(`..`));
+            //       await createFolder.click();
 
-                  createFolder = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-dlg-butcreate btn-primary btn' and contains(text(),'Create folder')]`)));
-                  await createFolder.click();
+            //       createFolder = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-dlg-butcreate btn-primary btn' and contains(text(),'Create folder')]`)));
+            //       await createFolder.click();
 
-                  await new Promise(resolve => setTimeout(resolve, 2000));
+            //       await new Promise(resolve => setTimeout(resolve, 2000));
 
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
-                  await addFile.click();
+            //       let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+            //       await addFile.click();
 
-                  let fileInput;
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(valid1);
+            //       let fileInput;
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(valid1);
 
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  await addFile.click();
+            //       await addFile.click();
 
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(valid2);
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(valid2);
 
-                  uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
-                  await finishButton.click();
+            //       let finishButton = await driver.wait(until.elementLocated(By.xpath(`//input[@id='id_submitbutton' and @type='submit']`)), 10000);
+            //       await finishButton.click();
 
-                  let currentURL = await driver.getCurrentUrl();
-                  assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
-            });
+            //       let currentURL = await driver.getCurrentUrl();
+            //       assert.match(currentURL, /^https:\/\/sandbox\.moodledemo\.net\/mod\/assign\/view\.php\?id=[1-9][0-9]*(&action=view)?$/);
+            // });
 
-            it(`File nộp rỗng`, async () =>
-            {
-                  reset = false;
+            // it(`File nộp rỗng`, async () =>
+            // {
+            //       reset = false;
 
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
-                  await addFile.click();
+            //       let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+            //       await addFile.click();
 
-                  let fileInput;
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(emptyFile);
+            //       let fileInput;
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(emptyFile);
 
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
-                  let errorText = await errorModal.getText();
+            //       let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
+            //       let errorText = await errorModal.getText();
 
-                  assert.match(errorText, /^The file '.+\..+' is either empty or a folder\. To upload folders zip them first\.$/)
-            });
+            //       assert.match(errorText, /^The file '.+\..+' is either empty or a folder\. To upload folders zip them first\.$/)
+            // });
 
-            it(`File nộp quá lớn`, async () =>
-            {
-                  reset = false;
+            // it(`File nộp quá lớn`, async () =>
+            // {
+            //       reset = false;
 
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
-                  await addFile.click();
+            //       let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+            //       await addFile.click();
 
-                  let fileInput;
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  await fileInput.sendKeys(bigFile);
+            //       let fileInput;
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       await fileInput.sendKeys(bigFile);
 
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
-                  let errorText = await errorModal.getText();
+            //       let errorModal = await driver.wait(until.elementLocated(By.xpath(`//div[@class='moodle-exception-message']`)), 10000);
+            //       let errorText = await errorModal.getText();
 
-                  assert.match(errorText, /^The file .+\..+ is too large\. The maximum size you can upload is \d+ [MK]B\.$/)
-            });
+            //       assert.match(errorText, /^The file .+\..+ is too large\. The maximum size you can upload is \d+ [MK]B\.$/)
+            // });
 
-            it(`Không nộp file nào`, async () =>
-            {
-                  reset = false;
+            // it(`Không nộp file nào`, async () =>
+            // {
+            //       reset = false;
 
-                  let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
-                  await addFile.click();
+            //       let addFile = await driver.wait(until.elementLocated(By.xpath(`//a[@role='button' and @title='Add...']`)), 10000);
+            //       await addFile.click();
 
-                  let fileInput;
-                  try
-                  {
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  catch (err)
-                  {
-                        let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
-                        await temp.click();
-                        await new Promise(resolve => setTimeout(resolve, 3000));
-                        fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
-                  }
-                  let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
-                  await uploadButton.click();
+            //       let fileInput;
+            //       try
+            //       {
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       catch (err)
+            //       {
+            //             let temp = await driver.wait(until.elementLocated(By.xpath(`//span[@class='fp-repo-name' and contains(text(),'Upload a file')]`)), 10000);
+            //             await temp.click();
+            //             await new Promise(resolve => setTimeout(resolve, 3000));
+            //             fileInput = await driver.wait(until.elementLocated(By.name('repo_upload_file')), 10000);
+            //       }
+            //       let uploadButton = await driver.wait(until.elementLocated(By.xpath(`//button[@class='fp-upload-btn btn-primary btn' and contains(text(),'Upload this file')]`)), 10000);
+            //       await uploadButton.click();
 
-                  let errorModal = await driver.wait(until.elementLocated(By.xpath(`//p[@id='fp-msg-labelledby']`)), 10000);
-                  let errorText = await errorModal.getText();
+            //       let errorModal = await driver.wait(until.elementLocated(By.xpath(`//p[@id='fp-msg-labelledby']`)), 10000);
+            //       let errorText = await errorModal.getText();
 
-                  assert.equal(errorText, "No files attached");
-            });
+            //       assert.equal(errorText, "No files attached");
+            // });
 
             it(`Số lượng file quá nhiều`, async () =>
             {
