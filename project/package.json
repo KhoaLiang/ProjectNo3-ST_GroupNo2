@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "test": "jest",
-    "submitFile":"npm test -- submitFile.test.js",
-    "createNewCourse":"npm test -- createNewCourse.test.js"
+    "testWithJest": "jest",
+    "submitFile":"npm run testWithJest -- submitFile.test.js",
+    "createNewCourse":"npm run testWithJest -- createNewCourse.test.js"
   },
   "dependencies": {
     "jest": "^29.7.0",
