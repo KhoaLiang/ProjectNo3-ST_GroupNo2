@@ -267,6 +267,7 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
@@ -529,6 +530,7 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
@@ -1004,6 +1006,7 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
@@ -1470,6 +1473,7 @@ describe(`Test trên edge (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
@@ -1732,6 +1736,7 @@ describe(`Test trên edge (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
@@ -2207,6 +2212,7 @@ describe(`Test trên edge (tổng 21 testcases)`, () =>
             {
                   if (reset)
                   {
+                        // Xóa bài nộp nếu có yêu cầu
                         await driver.get("https://sandbox402.moodledemo.net/course/view.php?id=2&lang=en");
 
                         let test = await driver.wait(until.elementLocated(By.xpath(`//span[@class='instancename' and contains(text(),'TEST ASSIGNMENT - SUBMISSION TEST')]`)), 10000);
