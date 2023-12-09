@@ -1,0 +1,340 @@
+{
+  "id": "90fd5db7-2a75-401a-9076-ba373ce41656",
+  "version": "2.0",
+  "name": "Lv 0: PLayback video _ Moodle",
+  "url": "https://sandbox.moodledemo.net/course/view.php?id=2",
+  "tests": [{
+    "id": "70200d93-55fd-4ac2-b2ad-5ba00e5b2771",
+    "name": "Video speed 0.5",
+    "commands": [{
+      "id": "9e6d02a1-1566-429e-a232-d75e21acbdee",
+      "comment": "",
+      "command": "open",
+      "target": "https://sandbox.moodledemo.net/course/view.php?id=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c89be54a-b47a-4cc9-9307-1ebddbda7af6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "420ac79b-0792-4022-b162-d5a5fcd4542b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-poster > img",
+      "targets": [
+        ["css=.vjs-poster > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://img.youtube.com/vi/OU24A9C8BUk/maxresdefault.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='id_videojs_6569b05270462_1']/div[2]/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa65537-23a1-405b-8ca4-2e98a710c92b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-playback-rate:nth-child(2)",
+      "targets": [
+        ["css=.vjs-playback-rate:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='id_videojs_6569b33a11a49_1']/div[6]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Playback Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b732748-c589-44d4-b125-086df8541dc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu-item:nth-child(7)",
+      "targets": [
+        ["css=.vjs-menu-item:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='id_videojs_6569b02526ae1_1']/div[6]/div[9]/div[2]/ul/li[7]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[7]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9f88f871-0bfb-4de1-b1ff-ea84e3285143",
+    "name": "Video speed 0.75",
+    "commands": [{
+      "id": "c1f70c5d-33f7-4edd-8f77-50654b854ddc",
+      "comment": "",
+      "command": "open",
+      "target": "https://sandbox.moodledemo.net/course/view.php?id=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bb9b364-0a8e-4b63-9421-acb2bb7996c4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a8ae12b-0a07-4763-ad53-a412c0ce32ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-poster > img",
+      "targets": [
+        ["css=.vjs-poster > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://img.youtube.com/vi/OU24A9C8BUk/maxresdefault.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='id_videojs_6569b0c243e45_1']/div[2]/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b83107-5d44-4087-a21d-0014952fdb1a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-playback-rate:nth-child(2)",
+      "targets": [
+        ["css=.vjs-playback-rate:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='id_videojs_6569b385d2993_1']/div[6]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Playback Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f7edf4-5f60-45cb-b46e-218065d4d1eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu-item:nth-child(6) > .vjs-menu-item-text",
+      "targets": [
+        ["css=.vjs-menu-item:nth-child(6) > .vjs-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='id_videojs_6569b0c243e45_1']/div[6]/div[9]/div[2]/ul/li[6]/span", "xpath:idRelative"],
+        ["xpath=//li[6]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0.75x')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc917d60-08cb-4f8c-a376-794e78ec2c90",
+    "name": "Video speed 1",
+    "commands": [{
+      "id": "a5b42f33-e636-4790-8525-fbc5813e945b",
+      "comment": "",
+      "command": "open",
+      "target": "https://sandbox.moodledemo.net/course/view.php?id=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57cbe415-c159-408e-939c-c14f1c57a806",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ab1e9be-e41c-4f92-8322-12ff57582bf3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav-item:nth-child(6) > .nav-link",
+      "targets": [
+        ["css=.nav-item:nth-child(6) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Question bank')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-6569b13db81a0-nav-tabs']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sandbox.moodledemo.net/question/edit.php?courseid=2')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Question bank')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32acca8d-4a66-4443-8338-95c1dd920e28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-poster > img",
+      "targets": [
+        ["css=.vjs-poster > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://img.youtube.com/vi/OU24A9C8BUk/maxresdefault.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='id_videojs_6569b13dc223f_1']/div[2]/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3494c154-e9b3-4848-85e3-437ac98c7309",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-playback-rate:nth-child(2)",
+      "targets": [
+        ["css=.vjs-playback-rate:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='id_videojs_6569b40007915_1']/div[6]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Playback Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4381dec8-596d-41a9-b659-2121a35f6391",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu-item:nth-child(5) > .vjs-menu-item-text",
+      "targets": [
+        ["css=.vjs-menu-item:nth-child(5) > .vjs-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='id_videojs_6569b13dc223f_1']/div[6]/div[9]/div[2]/ul/li[5]/span", "xpath:idRelative"],
+        ["xpath=//li[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1x')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c5c92345-5d4a-4d7e-9309-c514c44827e6",
+    "name": "Video speed 1.75",
+    "commands": [{
+      "id": "894bf100-2c4c-4fed-97fe-9ae6003c4e90",
+      "comment": "",
+      "command": "open",
+      "target": "https://sandbox.moodledemo.net/course/view.php?id=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b876b56a-9a17-477c-bae1-14f950a17906",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da0015a8-5298-46eb-8a71-67bc5906b793",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-poster > img",
+      "targets": [
+        ["css=.vjs-poster > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://img.youtube.com/vi/OU24A9C8BUk/maxresdefault.jpg')]", "xpath:img"],
+        ["xpath=//div[@id='id_videojs_6569b17a6a49b_1']/div[2]/picture/img", "xpath:idRelative"],
+        ["xpath=//picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8abf1299-e039-4208-bd52-86c49e02fe5f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-playback-rate:nth-child(2)",
+      "targets": [
+        ["css=.vjs-playback-rate:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='id_videojs_6569b43338d16_1']/div[6]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Playback Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dccf75af-0fb5-4da2-99d3-be15bf256207",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu:nth-child(3) .vjs-menu-item:nth-child(2) > .vjs-menu-item-text",
+      "targets": [
+        ["css=.vjs-menu:nth-child(3) .vjs-menu-item:nth-child(2) > .vjs-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='id_videojs_6569b1e65cd02_1']/div[6]/div[9]/div[2]/ul/li[2]/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1.75x')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9178705a-65aa-4536-bbd4-46629baac96f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3ae76eb-3c48-4b38-bb45-75e1bc5ba5ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "78f26b84-4074-4b25-a3c8-31e448c8f3f4",
+    "name": "Video speed 2",
+    "commands": [{
+      "id": "68e4301e-575c-4a6c-a3d3-0460e35acb08",
+      "comment": "",
+      "command": "open",
+      "target": "https://sandbox.moodledemo.net/course/view.php?id=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "816bd316-f8d4-4019-a8df-527111c074e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "856x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deab9719-1772-420f-bf80-28aee2ce767c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-poster > img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47cc42ea-c775-4556-a145-5c8f796706a7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.vjs-playback-rate:nth-child(2)",
+      "targets": [
+        ["css=.vjs-playback-rate:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='id_videojs_6569b2ecc41d9_1']/div[6]/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Playback Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2f9da9c-22bf-4249-b8d9-73d7b7ffd8b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vjs-menu:nth-child(3) .vjs-menu-item:nth-child(1) > .vjs-menu-item-text",
+      "targets": [
+        ["css=.vjs-menu:nth-child(3) .vjs-menu-item:nth-child(1) > .vjs-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='id_videojs_6569b28f0fa5e_1']/div[6]/div[9]/div[2]/ul/li/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'2x')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05314108-58b8-495e-bc9c-179dc548139d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e65612a-6d94-4caf-bb13-993eaca6b585",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d19c001c-41a8-4b46-9868-3af758ab7ff0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["70200d93-55fd-4ac2-b2ad-5ba00e5b2771"]
+  }],
+  "urls": ["https://sandbox.moodledemo.net/course/view.php?id=2"],
+  "plugins": []
+}
