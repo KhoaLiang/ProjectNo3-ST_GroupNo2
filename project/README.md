@@ -23,3 +23,12 @@
 ```bash
     npx jest -- AddNewBadge.test.js
 ```
+
+### Add New Quiz:
+```bash
+    npm run addNewQuiz
+```
+### Add New Event:
+```bash
+    npm run addNewEvent
+```
