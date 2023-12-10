@@ -1,6 +1,7 @@
 const { By, Builder, until, Capabilities } = require("selenium-webdriver");
 const { Select } = require('selenium-webdriver/lib/select');
 const assert = require("assert");
+const path=require("path");
 
 const chromeOptions = {
       args: ['--guest'],
@@ -20,10 +21,10 @@ describe(`Test trên chrome (tổng 21 testcases)`, () =>
 {
       jest.setTimeout(60000);
 
-      const valid1 = `${ __dirname }/files/ValidFile1.txt`;
-      const valid2 = `${ __dirname }/files/ValidFile2.txt`;
-      const bigFile = `${ __dirname }/files/BigFile.pdf`;
-      const emptyFile = `${ __dirname }/files/EmptyFile.txt`;
+      const valid1 = path.join(__dirname, '..', 'files','ValidFile1.txt'); //`${ __dirname }/files/ValidFile1.txt`;
+      const valid2 = path.join(__dirname, '..', 'files', 'ValidFile2.txt'); //`${ __dirname }/files/ValidFile2.txt`;
+      const bigFile = path.join(__dirname, '..', 'files', 'BigFile.pdf'); //`${ __dirname }/files/BigFile.pdf`;
+      const emptyFile = path.join(__dirname, '..', 'files', 'EmptyFile.txt'); //`${ __dirname }/files/EmptyFile.txt`;
 
       const dragAndDropSimulationScript = `function simulateFileDragAndDrop(element, files) {
         // Create a DataTransfer object for simulating file drag and drop
@@ -1226,10 +1227,10 @@ describe(`Test trên edge (tổng 21 testcases)`, () =>
 {
       jest.setTimeout(60000);
 
-      const valid1 = `${ __dirname }/files/ValidFile1.txt`;
-      const valid2 = `${ __dirname }/files/ValidFile2.txt`;
-      const bigFile = `${ __dirname }/files/BigFile.pdf`;
-      const emptyFile = `${ __dirname }/files/EmptyFile.txt`;
+      const valid1 = path.join(__dirname, '..', 'files', 'ValidFile1.txt'); //`${ __dirname }/files/ValidFile1.txt`;
+      const valid2 = path.join(__dirname, '..', 'files', 'ValidFile2.txt'); //`${ __dirname }/files/ValidFile2.txt`;
+      const bigFile = path.join(__dirname, '..', 'files', 'BigFile.pdf'); //`${ __dirname }/files/BigFile.pdf`;
+      const emptyFile = path.join(__dirname, '..', 'files', 'EmptyFile.txt'); //`${ __dirname }/files/EmptyFile.txt`;
 
       const dragAndDropSimulationScript = `function simulateFileDragAndDrop(element, files) {
         // Create a DataTransfer object for simulating file drag and drop
