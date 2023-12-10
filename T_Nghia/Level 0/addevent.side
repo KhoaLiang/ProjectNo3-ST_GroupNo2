@@ -817,7 +817,7 @@
       "id": "20c0a7f2-21b0-4d1f-b836-7c2a38e9edf2",
       "comment": "",
       "command": "click",
-      "target": "id=yui_3_18_1_1_1702214778117_560",
+      "target": " xpath=//div[2]/div/div/div[3]/button",
       "targets": [
         ["id=yui_3_18_1_1_1702214778117_560", "id"],
         ["css=#yui_3_18_1_1_1702214778117_560", "css:finder"],
@@ -1198,7 +1198,7 @@
       "id": "81b683eb-0086-42dc-afd0-593fb20b4326",
       "comment": "",
       "command": "click",
-      "target": "id=yui_3_18_1_1_1702214778117_560",
+      "target": " xpath=//div[2]/div/div/div[3]/button",
       "targets": [
         ["id=yui_3_18_1_1_1702214778117_560", "id"],
         ["css=#yui_3_18_1_1_1702214778117_560", "css:finder"],
@@ -1579,7 +1579,7 @@
       "id": "78ac63b1-918b-47fb-8838-abc043841fd9",
       "comment": "",
       "command": "click",
-      "target": "id=yui_3_18_1_1_1702214778117_560",
+      "target": " xpath=//div[2]/div/div/div[3]/button",
       "targets": [
         ["id=yui_3_18_1_1_1702214778117_560", "id"],
         ["css=#yui_3_18_1_1_1702214778117_560", "css:finder"],
