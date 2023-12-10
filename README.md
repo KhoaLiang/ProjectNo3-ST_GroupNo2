@@ -11,8 +11,6 @@
 ## Installation dependencies:
 
 ```bash
-    cd project
-
     npm install
 ```
 
