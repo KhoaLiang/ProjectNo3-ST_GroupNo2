@@ -1535,47 +1535,6 @@
       "targets": [],
       "value": "label=30"
     }, {
-      "id": "bf6d1625-11fe-48b3-afb9-40e6a87d5295",
-      "comment": "",
-      "command": "click",
-      "target": "id=id_duration_2",
-      "targets": [
-        ["id=id_duration_2", "id"],
-        ["css=#id_duration_2", "css:finder"],
-        ["xpath=//input[@id='id_duration_2']", "xpath:attributes"],
-        ["xpath=//label[@id='yui_3_18_1_1_1702214778117_552']/input", "xpath:idRelative"],
-        ["xpath=//label[3]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1938eb2b-2e42-439e-9d41-0131286e9d15",
-      "comment": "",
-      "command": "click",
-      "target": "id=id_timedurationminutes",
-      "targets": [
-        ["id=id_timedurationminutes", "id"],
-        ["name=timedurationminutes", "name"],
-        ["css=#id_timedurationminutes", "css:finder"],
-        ["xpath=//input[@id='id_timedurationminutes']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1702214778117_305']/input", "xpath:idRelative"],
-        ["xpath=//span/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "43f22cda-889c-4580-ab47-048e7e7712bb",
-      "comment": "",
-      "command": "type",
-      "target": "id=id_timedurationminutes",
-      "targets": [
-        ["id=id_timedurationminutes", "id"],
-        ["name=timedurationminutes", "name"],
-        ["css=#id_timedurationminutes", "css:finder"],
-        ["xpath=//input[@id='id_timedurationminutes']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1702214778117_305']/input", "xpath:idRelative"],
-        ["xpath=//span/input", "xpath:position"]
-      ],
-      "value": "8"
-    }, {
       "id": "78ac63b1-918b-47fb-8838-abc043841fd9",
       "comment": "",
       "command": "click",
@@ -1590,7 +1549,7 @@
       ],
       "value": ""
     }, {
-      "id": "121a18d4-4c47-41f4-8e70-3eb312daeaed",
+      "id": "79559498-609f-4769-8041-d4e7caf18e9e",
       "comment": "",
       "command": "assertText",
       "target": "id=fgroup_id_error_durationgroup",
