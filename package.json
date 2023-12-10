@@ -5,6 +5,8 @@
     "createNewCourse":"npm run testWithJest -- createNewCourse.test.js",
     "PostQuestion":"npm run testWithJest -- PostQuestion.test.js",
     "AddNewBadge":"npm run testWithJest -- AddNewBadge.test.js",
+    "AddNewQuiz":"mocha --no-timeouts \"./T_Nghia/Level 1/addNewQuiz.test.js\"",
+    "AddNewEvent":"mocha --no-timeouts \"./T_Nghia/Level 1/addNewEvent.test.js\"",
     "profileChange": "npm run testWithJest -- profileChange.test.js"
   },
   "dependencies": {
