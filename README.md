@@ -52,3 +52,25 @@
     or
     npm run submitFile
 ```
+
+### Create new course (Moodle 4.3):
+
+```bash
+    npx jest -- createNewCourse.test.js
+    or
+    npm run createNewCourse
+```
+
+
+### Create new Quiz (Moodle 4.3):
+
+```bash
+    npm run AddNewQuiz
+```
+
+### Create new Event (Moodle 4.3):
+
+```bash
+    npm run AddNewEvent
+```
+
