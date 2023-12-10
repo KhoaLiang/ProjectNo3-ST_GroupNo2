@@ -5,7 +5,11 @@
 **Requirement 1:** Change rows in testcases that have value of `C:\Users\APC\Desktop\ValidFile1.txt` to `<this project directory in your machine>\N_Nghia\files\ValidFile1.txt`<br/>
 **Requirement 2:** Change rows in testcases that have value of `C:\Users\APC\Desktop\ValidFile2.txt` to `<this project directory in your machine>\N_Nghia\files\ValidFile2.txt`<br/>
 **Requirement 3:** Change rows in testcases that have value of `C:\Users\APC\Desktop\EmptyFile.txt` to `<this project directory in your machine>\N_Nghia\files\EmptyFile.txt`<br/>
-**Requirement 4:** Change rows in testcases that have value of `C:\Users\APC\Desktop\BigFile.pdf` to `<this project directory in your machine>\N_Nghia\files\BigFile.pdf`
+**Requirement 4:** Change rows in testcases that have value of `C:\Users\APC\Desktop\BigFile.pdf` to `<this project directory in your machine>\N_Nghia\files\BigFile.pdf`<br/>
+**Requirement 5:** Execution speed should be around 3/4 to ensure success.
+
+## Before running N_Nghia/Level 0/createNewCourse.side
+**Requirement:** Execution speed should be around 3/4 to ensure success.
 
 # This is the guide for run test Level 1 (test scripts)
 
@@ -57,16 +61,6 @@
     npm run submitFile
 ```
 
-<<<<<<< HEAD
-### Create new course (Moodle 4.3):
-
-```bash
-    npx jest -- createNewCourse.test.js
-    or
-    npm run createNewCourse
-```
-
-
 ### Create new Quiz (Moodle 4.3):
 
 ```bash
@@ -79,7 +73,6 @@
     npm run AddNewEvent
 ```
 
-=======
 ### Change profile info (Moodle 4.3):
 
 ```bash
@@ -87,4 +80,3 @@
     or
     npm run profileChange
 ```
->>>>>>> 0ff7151ff378727fde111f72e4ad7b858947c608
