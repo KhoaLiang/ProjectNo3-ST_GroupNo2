@@ -4,7 +4,8 @@
     "submitFile":"npm run testWithJest -- submitFile.test.js",
     "createNewCourse":"npm run testWithJest -- createNewCourse.test.js",
     "PostQuestion":"npm run testWithJest -- PostQuestion.test.js",
-    "AddNewBadge":"npm run testWithJest -- AddNewBadge.test.js"
+    "AddNewBadge":"npm run testWithJest -- AddNewBadge.test.js",
+    "profileChange": "npm run testWithJest -- profileChange.test.js"
   },
   "dependencies": {
     "jest": "^29.7.0",

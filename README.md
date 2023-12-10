@@ -1,19 +1,22 @@
 # This is the guide for run test Level 0 (IDE projects)
 
 ## Before running N_Nghia/Level 0/submitFile.side
+
 **Requirement 1:** Change rows in testcases that have value of `C:\Users\APC\Desktop\ValidFile1.txt` to `<this project directory in your machine>\N_Nghia\files\ValidFile1.txt`<br/>
 **Requirement 2:** Change rows in testcases that have value of `C:\Users\APC\Desktop\ValidFile2.txt` to `<this project directory in your machine>\N_Nghia\files\ValidFile2.txt`<br/>
 **Requirement 3:** Change rows in testcases that have value of `C:\Users\APC\Desktop\EmptyFile.txt` to `<this project directory in your machine>\N_Nghia\files\EmptyFile.txt`<br/>
 **Requirement 4:** Change rows in testcases that have value of `C:\Users\APC\Desktop\BigFile.pdf` to `<this project directory in your machine>\N_Nghia\files\BigFile.pdf`
 
-
 # This is the guide for run test Level 1 (test scripts)
-**Requirement:**  Installing node version 16 (visit https://nodejs.org/en)
+
+**Requirement:** Installing node version 16 (visit https://nodejs.org/en)
 
 ## Init Code:
+
 ```bash
     git clone https://github.com/KhoaLiang/ProjectNo3-ST_GroupNo2
 ```
+
 ## Installation dependencies:
 
 ```bash
@@ -21,6 +24,7 @@
 ```
 
 ## Run Test
+
 ### Post Question to forum (Moodle 4.2):
 
 ```bash
@@ -32,8 +36,8 @@
 ### Add New Badge (Moodle 4.2):
 
 ```bash
-    npx jest -- AddNewBadge.test.js 
-    or 
+    npx jest -- AddNewBadge.test.js
+    or
     npm run AddNewBadge
 ```
 
@@ -51,4 +55,12 @@
     npx jest -- submitFile.test.js
     or
     npm run submitFile
+```
+
+### Change profile info (Moodle 4.3):
+
+```bash
+    npx jest -- profileChange.test.js
+    or
+    npm run profileChange
 ```
