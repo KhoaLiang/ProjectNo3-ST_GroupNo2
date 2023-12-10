@@ -51,20 +51,6 @@
       ],
       "value": ""
     }, {
-      "id": "5f7f8dd2-78fc-4645-a4f9-d2a173a888e9",
-      "comment": "",
-      "command": "click",
-      "target": "id=id_subject",
-      "targets": [
-        ["id=id_subject", "id"],
-        ["name=subject", "name"],
-        ["css=#id_subject", "css:finder"],
-        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
-        ["xpath=//div[@id='fitem_id_subject']/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "2bbfa05b-dfdf-4d54-bff4-bdb4a530bc59",
       "comment": "",
       "command": "click",
@@ -348,20 +334,6 @@
         ["xpath=//a[contains(@href, '#collapseAddForm')]", "xpath:href"],
         ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Add discussion topic')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "2e5c3a8e-0ef3-4590-8d9f-afa310bb8470",
-      "comment": "",
-      "command": "click",
-      "target": "id=id_subject",
-      "targets": [
-        ["id=id_subject", "id"],
-        ["name=subject", "name"],
-        ["css=#id_subject", "css:finder"],
-        ["xpath=//input[@id='id_subject']", "xpath:attributes"],
-        ["xpath=//div[@id='fitem_id_subject']/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/input", "xpath:position"]
       ],
       "value": ""
     }, {
